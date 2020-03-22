@@ -1,10 +1,14 @@
 package ingresso.exceptionhandler;
 
 import java.time.OffsetDateTime;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.FieldError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
@@ -15,8 +19,26 @@ import ingresso.exception.ResourceNotFoundException;
 @ControllerAdvice
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 
+	@Override
+	protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
+			HttpHeaders headers, HttpStatus status, WebRequest request) {
+
+		List<Problem.Field> fields = ex.getBindingResult().getAllErrors().stream().map(objectError -> {
+			String message = objectError.getDefaultMessage();
+			String name = objectError.getObjectName();
+			if (objectError instanceof FieldError) {
+				name = ((FieldError) objectError).getField();
+			}
+			return new Problem.Field(name, message);
+		}).collect(Collectors.toList());
+		String message = "Um ou mais campos estão inválidos. Faça o preenchimento correto e tente novamente.";
+		Problem body = new Problem(message, status.value(), OffsetDateTime.now(), fields);
+		return handleExceptionInternal(ex, body, headers, status, request);
+	}
+
 	@ExceptionHandler(ResourceNotFoundException.class)
 	private ResponseEntity<?> handleResourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
+
 		HttpStatus status = HttpStatus.NOT_FOUND;
 		Problem body = new Problem(ex.getMessage(), status.value(), OffsetDateTime.now(), null);
 		return handleExceptionInternal(ex, body, new HttpHeaders(), status, request);

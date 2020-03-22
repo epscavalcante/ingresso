@@ -2,9 +2,11 @@ package ingresso.resource;
 
 import java.util.Collection;
 
+import javax.annotation.PostConstruct;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +22,17 @@ public abstract class ApiResource<R, ID> {
 
 	@Autowired
 	private ApiService<R, ID> service;
+
+	private JpaRepository<R, ID> repository;
+
+	public ApiResource(JpaRepository<R, ID> repository) {
+		this.repository = repository;
+	}
+
+	@PostConstruct
+	public void init() {
+		service.setRepository(repository);
+	}
 
 	@GetMapping
 	public Collection<R> findAll() {
@@ -44,7 +57,7 @@ public abstract class ApiResource<R, ID> {
 	}
 
 	@DeleteMapping("/{id}")
-	@ResponseStatus(HttpStatus.NO_CONTENT)	
+	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable ID id) {
 		service.delete(id);
 	}

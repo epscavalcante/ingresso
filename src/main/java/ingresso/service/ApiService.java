@@ -5,7 +5,6 @@ import java.util.Collection;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
@@ -14,8 +13,11 @@ import ingresso.exception.ResourceNotFoundException;
 @Service
 public class ApiService<R, ID> {
 
-	@Autowired
 	private JpaRepository<R, ID> repository;
+
+	public void setRepository(JpaRepository<R, ID> repository) {
+		this.repository = repository;
+	}
 
 	public Collection<R> findAll() {
 		return repository.findAll();
