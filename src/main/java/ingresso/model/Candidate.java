@@ -23,6 +23,7 @@ public class Candidate {
 	private SelectiveProcess selectiveProcess;
 
 	@NotNull
+	@ManyToOne(optional = false)
 	private CandidateStatus status;
 
 	public Integer getId() {

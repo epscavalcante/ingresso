@@ -1,16 +1,34 @@
 package ingresso.model;
 
-public enum CandidateStatus {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
-	ENROLLED("Inscrito"), PRE_MATRICULATION("Pré-Matrículado"), CLASSIFIED("Classificado"), APPROVED("Aprovado");
+@Entity
+public class CandidateStatus {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+
+	@NotBlank
 	private String description;
 
-	private CandidateStatus(String description) {
-		this.description = description;
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getDescription() {
 		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 }

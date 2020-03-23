@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
@@ -18,6 +19,7 @@ public class SelectiveProcess {
 	private String name;
 
 	@NotNull
+	@ManyToOne(optional = false)
 	private SelectiveProcessType type;
 
 	public Integer getId() {
