@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
 
 @Entity
 public class Candidate {
@@ -14,15 +13,12 @@ public class Candidate {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	@NotNull
 	@ManyToOne(optional = false)
 	private Person person;
 
-	@NotNull
 	@ManyToOne(optional = false)
 	private SelectiveProcess selectiveProcess;
 
-	@NotNull
 	@ManyToOne(optional = false)
 	private CandidateStatus status;
 

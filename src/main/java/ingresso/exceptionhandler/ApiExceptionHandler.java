@@ -4,15 +4,20 @@ import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+import com.fasterxml.jackson.databind.exc.PropertyBindingException;
 
 import ingresso.exception.ResourceNotFoundException;
 
@@ -32,6 +37,23 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 			return new Problem.Field(name, message);
 		}).collect(Collectors.toList());
 		String message = "Um ou mais campos estão inválidos. Faça o preenchimento correto e tente novamente.";
+		Problem body = new Problem(message, status.value(), OffsetDateTime.now(), fields);
+		return handleExceptionInternal(ex, body, headers, status, request);
+	}
+
+	@Override
+	protected ResponseEntity<Object> handleHttpMessageNotReadable(HttpMessageNotReadableException ex,
+			HttpHeaders headers, HttpStatus status, WebRequest request) {
+		Throwable rootCause = ExceptionUtils.getRootCause(ex);
+
+		if (rootCause instanceof InvalidFormatException) {
+			//
+		} else if (rootCause instanceof PropertyBindingException) {
+			//
+		}
+
+		String message = "O corpo da requisição está inválido. Verifique erro de sintaxe.";
+		List<Problem.Field> fields = null;
 		Problem body = new Problem(message, status.value(), OffsetDateTime.now(), fields);
 		return handleExceptionInternal(ex, body, headers, status, request);
 	}

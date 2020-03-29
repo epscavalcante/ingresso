@@ -1,15 +1,13 @@
 package ingresso.model;
 
+import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotBlank;
-
-import org.hibernate.validator.constraints.br.CPF;
 
 @Entity
 public class Person {
@@ -18,16 +16,15 @@ public class Person {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	@NotBlank
 	private String name;
 
-	@NotBlank
-	@CPF
 	private String cpf;
 
-	@NotBlank
-	@Email
 	private String email;
+
+	private LocalDate birth;
+
+	private String mother;
 
 	@PrePersist
 	void prePersiste() {
@@ -69,6 +66,22 @@ public class Person {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public LocalDate getBirth() {
+		return birth;
+	}
+
+	public void setBirth(LocalDate birth) {
+		this.birth = birth;
+	}
+
+	public String getMother() {
+		return mother;
+	}
+
+	public void setMother(String mother) {
+		this.mother = mother;
 	}
 
 }
