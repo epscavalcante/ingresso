@@ -6,13 +6,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class CandidateStatus {
+public class Bank {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
 	private String name;
+
+	private String febrabanCode;
 
 	public Integer getId() {
 		return id;
@@ -28,6 +30,14 @@ public class CandidateStatus {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getFebrabanCode() {
+		return febrabanCode;
+	}
+
+	public void setFebrabanCode(String febrabanCode) {
+		this.febrabanCode = febrabanCode;
 	}
 
 }

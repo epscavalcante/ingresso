@@ -1,18 +1,19 @@
 package ingresso.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class CandidateStatus {
+public class City {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
 	private String name;
+
+	@ManyToOne
+	private State state;
 
 	public Integer getId() {
 		return id;
@@ -28,6 +29,14 @@ public class CandidateStatus {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public State getState() {
+		return state;
+	}
+
+	public void setState(State state) {
+		this.state = state;
 	}
 
 }

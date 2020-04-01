@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 
@@ -25,6 +27,38 @@ public class Person {
 	private LocalDate birth;
 
 	private String mother;
+
+	@ManyToOne
+	private Sex sex;
+
+	@OneToOne
+	private GeneralRegistry generalRegistry;
+
+	private Integer children;
+
+	@ManyToOne
+	private CivilState civilState;
+
+	@ManyToOne
+	private Nationality nationality;
+
+	@ManyToOne
+	private City cityNaturality;
+
+	@ManyToOne
+	private Deficiency deficiency;
+
+	@ManyToOne
+	private Race race;
+
+	private Integer familyQuantity;
+
+	@ManyToOne
+	private Gender gender;
+
+	private String socialName;
+
+	private BankAccount bankAccount;
 
 	@PrePersist
 	void prePersiste() {
@@ -82,6 +116,102 @@ public class Person {
 
 	public void setMother(String mother) {
 		this.mother = mother;
+	}
+
+	public Sex getSex() {
+		return sex;
+	}
+
+	public void setSex(Sex sex) {
+		this.sex = sex;
+	}
+
+	public GeneralRegistry getGeneralRegistry() {
+		return generalRegistry;
+	}
+
+	public void setGeneralRegistry(GeneralRegistry generalRegistry) {
+		this.generalRegistry = generalRegistry;
+	}
+
+	public Integer getChildren() {
+		return children;
+	}
+
+	public void setChildren(Integer children) {
+		this.children = children;
+	}
+
+	public CivilState getCivilState() {
+		return civilState;
+	}
+
+	public void setCivilState(CivilState civilState) {
+		this.civilState = civilState;
+	}
+
+	public Nationality getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(Nationality nationality) {
+		this.nationality = nationality;
+	}
+
+	public City getCityNaturality() {
+		return cityNaturality;
+	}
+
+	public void setCityNaturality(City cityNaturality) {
+		this.cityNaturality = cityNaturality;
+	}
+
+	public Deficiency getDeficiency() {
+		return deficiency;
+	}
+
+	public void setDeficiency(Deficiency deficiency) {
+		this.deficiency = deficiency;
+	}
+
+	public Race getRace() {
+		return race;
+	}
+
+	public void setRace(Race race) {
+		this.race = race;
+	}
+
+	public Integer getFamilyQuantity() {
+		return familyQuantity;
+	}
+
+	public void setFamilyQuantity(Integer familyQuantity) {
+		this.familyQuantity = familyQuantity;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	public String getSocialName() {
+		return socialName;
+	}
+
+	public void setSocialName(String socialName) {
+		this.socialName = socialName;
+	}
+
+	public BankAccount getBankAccount() {
+		return bankAccount;
+	}
+
+	public void setBankAccount(BankAccount bankAccount) {
+		this.bankAccount = bankAccount;
 	}
 
 }
