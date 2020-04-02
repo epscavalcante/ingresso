@@ -1,0 +1,218 @@
+[
+	{
+		"poloUID" : 1,
+		"name" : "Cuiabá",
+		"cidadeSedeMunicipioUID" : 5103403,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 2,
+		"name" : "Chapada dos Guimarães",
+		"cidadeSedeMunicipioUID" : 5103007,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 3,
+		"name" : "Várzea Grande",
+		"cidadeSedeMunicipioUID" : 5108402,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 4,
+		"name" : "Rondonópolis",
+		"cidadeSedeMunicipioUID" : 5107602,
+		"sigaCodCampus" : 2
+	},
+	{
+		"poloUID" : 5,
+		"name" : "Pontal do Araguaia",
+		"cidadeSedeMunicipioUID" : 5106653,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 6,
+		"name" : "Barra do Garças \/ Pontal do Araguaia",
+		"cidadeSedeMunicipioUID" : 5101803,
+		"sigaCodCampus" : 3
+	},
+	{
+		"poloUID" : 7,
+		"name" : "Sinop",
+		"cidadeSedeMunicipioUID" : 5107909,
+		"sigaCodCampus" : 4
+	},
+	{
+		"poloUID" : 8,
+		"name" : "Alto Araguaia",
+		"cidadeSedeMunicipioUID" : 5100300,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 9,
+		"name" : "Diamantino",
+		"cidadeSedeMunicipioUID" : 5103502,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 10,
+		"name" : "Juara",
+		"cidadeSedeMunicipioUID" : 5105101,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 11,
+		"name" : "Lucas do Rio Verde",
+		"cidadeSedeMunicipioUID" : 5105259,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 12,
+		"name" : "Primavera do Leste",
+		"cidadeSedeMunicipioUID" : 5107040,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 13,
+		"name" : "Barra do Bugres",
+		"cidadeSedeMunicipioUID" : 5101704,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 14,
+		"name" : "Pontes e Lacerda",
+		"cidadeSedeMunicipioUID" : 5106752,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 15,
+		"name" : "Sorriso",
+		"cidadeSedeMunicipioUID" : 5107925,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 16,
+		"name" : "Guarantã do Norte",
+		"cidadeSedeMunicipioUID" : 5104104,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 17,
+		"name" : "Jauru",
+		"cidadeSedeMunicipioUID" : 5105002,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 18,
+		"name" : "Água Boa",
+		"cidadeSedeMunicipioUID" : 5100201,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 20,
+		"name" : "Colider",
+		"cidadeSedeMunicipioUID" : 5103205,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 21,
+		"name" : "Nova Xavantina",
+		"cidadeSedeMunicipioUID" : 5106257,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 22,
+		"name" : "Ribeirão Cascalheira",
+		"cidadeSedeMunicipioUID" : 5107180,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 23,
+		"name" : "Canarana",
+		"cidadeSedeMunicipioUID" : 5102702,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 24,
+		"name" : "Aripuanâ",
+		"cidadeSedeMunicipioUID" : 5101407,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 25,
+		"name" : "Pedra Preta",
+		"cidadeSedeMunicipioUID" : 5106372,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 26,
+		"name" : "São Felix do Araguaia",
+		"cidadeSedeMunicipioUID" : 5107859,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 27,
+		"name" : "Arenápolis",
+		"cidadeSedeMunicipioUID" : 5101308,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 28,
+		"name" : "Cáceres",
+		"cidadeSedeMunicipioUID" : 5102504,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 29,
+		"name" : "Campo Verde",
+		"cidadeSedeMunicipioUID" : 5102678,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 30,
+		"name" : "Comodoro",
+		"cidadeSedeMunicipioUID" : 5103304,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 31,
+		"name" : "Juína",
+		"cidadeSedeMunicipioUID" : 5105150,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 32,
+		"name" : "Porto Esperidião",
+		"cidadeSedeMunicipioUID" : 5106828,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 33,
+		"name" : "Sapezal",
+		"cidadeSedeMunicipioUID" : 5107875,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 34,
+		"name" : "Vila Rica",
+		"cidadeSedeMunicipioUID" : 5108600,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 35,
+		"name" : "Peixoto de Azevedo",
+		"cidadeSedeMunicipioUID" : 5106422,
+		"sigaCodCampus" : null
+	},
+	{
+		"poloUID" : 36,
+		"name" : "Rio Brilhante",
+		"cidadeSedeMunicipioUID" : 5007208,
+		"sigaCodCampus" : 1
+	},
+	{
+		"poloUID" : 37,
+		"name" : "São Gabriel do Oeste",
+		"cidadeSedeMunicipioUID" : 5007695,
+		"sigaCodCampus" : 1
+	}
+]

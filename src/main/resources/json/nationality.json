@@ -1,0 +1,10 @@
+[
+	{
+		"nacionalidadeUID" : 1,
+		"name" : "Brasileira"
+	},
+	{
+		"nacionalidadeUID" : 2,
+		"name" : "Estrangeira"
+	}
+]

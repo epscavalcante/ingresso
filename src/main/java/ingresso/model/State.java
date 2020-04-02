@@ -13,6 +13,15 @@ public class State {
 
 	private String abbreviation;
 
+	public State() {
+	}
+
+	public State(Integer id, String name, String abbreviation) {
+		this.id = id;
+		this.name = name;
+		this.abbreviation = abbreviation;
+	}
+
 	public Integer getId() {
 		return id;
 	}

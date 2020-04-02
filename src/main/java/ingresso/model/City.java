@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class City {
 
@@ -14,6 +16,15 @@ public class City {
 
 	@ManyToOne
 	private State state;
+
+	public City() {
+	}
+
+	public City(Integer id, String name, State state) {
+		this.id = id;
+		this.name = name;
+		this.state = state;
+	}
 
 	public Integer getId() {
 		return id;
@@ -31,6 +42,7 @@ public class City {
 		this.name = name;
 	}
 
+	@JsonIgnore
 	public State getState() {
 		return state;
 	}

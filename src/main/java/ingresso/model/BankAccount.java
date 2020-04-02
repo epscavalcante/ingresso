@@ -1,18 +1,35 @@
 package ingresso.model;
 
-import javax.persistence.OneToOne;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
+@Entity
 public class BankAccount {
 
-	@OneToOne
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+
+	@ManyToOne
 	private Bank bank;
 
-	@OneToOne
-	private BankType bankType;
+	@ManyToOne
+	private BankAccountType type;
 
 	private String agency;
 
 	private String number;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public Bank getBank() {
 		return bank;
@@ -22,12 +39,12 @@ public class BankAccount {
 		this.bank = bank;
 	}
 
-	public BankType getBankType() {
-		return bankType;
+	public BankAccountType getType() {
+		return type;
 	}
 
-	public void setBankType(BankType bankType) {
-		this.bankType = bankType;
+	public void setType(BankAccountType type) {
+		this.type = type;
 	}
 
 	public String getAgency() {

@@ -1,0 +1,26 @@
+[
+	{
+		"corRacaUID" : 1,
+		"name" : "Amarela"
+	},
+	{
+		"corRacaUID" : 2,
+		"name" : "Branca"
+	},
+	{
+		"corRacaUID" : 3,
+		"name" : "Indígena"
+	},
+	{
+		"corRacaUID" : 4,
+		"name" : "Parda"
+	},
+	{
+		"corRacaUID" : 5,
+		"name" : "Preta"
+	},
+	{
+		"corRacaUID" : 6,
+		"name" : "Não declarada"
+	}
+]

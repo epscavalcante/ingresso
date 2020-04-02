@@ -1,0 +1,10 @@
+[
+	{
+		"TipoContaBancoUID" : 1,
+		"name" : "Conta Corrente"
+	},
+	{
+		"TipoContaBancoUID" : 2,
+		"name" : "Conta Poupança"
+	}
+]

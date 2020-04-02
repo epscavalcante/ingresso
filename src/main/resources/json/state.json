@@ -1,0 +1,272 @@
+[
+	{
+		"id": 11,
+		"abbreviation": "RO",
+		"name": "Rondônia",
+		"regiao": {
+			"id": 1,
+			"abbreviation": "N",
+			"name": "Norte"
+		}
+	},
+	{
+		"id": 12,
+		"abbreviation": "AC",
+		"name": "Acre",
+		"regiao": {
+			"id": 1,
+			"abbreviation": "N",
+			"name": "Norte"
+		}
+	},
+	{
+		"id": 13,
+		"abbreviation": "AM",
+		"name": "Amazonas",
+		"regiao": {
+			"id": 1,
+			"abbreviation": "N",
+			"name": "Norte"
+		}
+	},
+	{
+		"id": 14,
+		"abbreviation": "RR",
+		"name": "Roraima",
+		"regiao": {
+			"id": 1,
+			"abbreviation": "N",
+			"name": "Norte"
+		}
+	},
+	{
+		"id": 15,
+		"abbreviation": "PA",
+		"name": "Pará",
+		"regiao": {
+			"id": 1,
+			"abbreviation": "N",
+			"name": "Norte"
+		}
+	},
+	{
+		"id": 16,
+		"abbreviation": "AP",
+		"name": "Amapá",
+		"regiao": {
+			"id": 1,
+			"abbreviation": "N",
+			"name": "Norte"
+		}
+	},
+	{
+		"id": 17,
+		"abbreviation": "TO",
+		"name": "Tocantins",
+		"regiao": {
+			"id": 1,
+			"abbreviation": "N",
+			"name": "Norte"
+		}
+	},
+	{
+		"id": 21,
+		"abbreviation": "MA",
+		"name": "Maranhão",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 22,
+		"abbreviation": "PI",
+		"name": "Piauí",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 23,
+		"abbreviation": "CE",
+		"name": "Ceará",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 24,
+		"abbreviation": "RN",
+		"name": "Rio Grande do Norte",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 25,
+		"abbreviation": "PB",
+		"name": "Paraíba",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 26,
+		"abbreviation": "PE",
+		"name": "Pernambuco",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 27,
+		"abbreviation": "AL",
+		"name": "Alagoas",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 28,
+		"abbreviation": "SE",
+		"name": "Sergipe",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 29,
+		"abbreviation": "BA",
+		"name": "Bahia",
+		"regiao": {
+			"id": 2,
+			"abbreviation": "NE",
+			"name": "Nordeste"
+		}
+	},
+	{
+		"id": 31,
+		"abbreviation": "MG",
+		"name": "Minas Gerais",
+		"regiao": {
+			"id": 3,
+			"abbreviation": "SE",
+			"name": "Sudeste"
+		}
+	},
+	{
+		"id": 32,
+		"abbreviation": "ES",
+		"name": "Espírito Santo",
+		"regiao": {
+			"id": 3,
+			"abbreviation": "SE",
+			"name": "Sudeste"
+		}
+	},
+	{
+		"id": 33,
+		"abbreviation": "RJ",
+		"name": "Rio de Janeiro",
+		"regiao": {
+			"id": 3,
+			"abbreviation": "SE",
+			"name": "Sudeste"
+		}
+	},
+	{
+		"id": 35,
+		"abbreviation": "SP",
+		"name": "São Paulo",
+		"regiao": {
+			"id": 3,
+			"abbreviation": "SE",
+			"name": "Sudeste"
+		}
+	},
+	{
+		"id": 41,
+		"abbreviation": "PR",
+		"name": "Paraná",
+		"regiao": {
+			"id": 4,
+			"abbreviation": "S",
+			"name": "Sul"
+		}
+	},
+	{
+		"id": 42,
+		"abbreviation": "SC",
+		"name": "Santa Catarina",
+		"regiao": {
+			"id": 4,
+			"abbreviation": "S",
+			"name": "Sul"
+		}
+	},
+	{
+		"id": 43,
+		"abbreviation": "RS",
+		"name": "Rio Grande do Sul",
+		"regiao": {
+			"id": 4,
+			"abbreviation": "S",
+			"name": "Sul"
+		}
+	},
+	{
+		"id": 50,
+		"abbreviation": "MS",
+		"name": "Mato Grosso do Sul",
+		"regiao": {
+			"id": 5,
+			"abbreviation": "CO",
+			"name": "Centro-Oeste"
+		}
+	},
+	{
+		"id": 51,
+		"abbreviation": "MT",
+		"name": "Mato Grosso",
+		"regiao": {
+			"id": 5,
+			"abbreviation": "CO",
+			"name": "Centro-Oeste"
+		}
+	},
+	{
+		"id": 52,
+		"abbreviation": "GO",
+		"name": "Goiás",
+		"regiao": {
+			"id": 5,
+			"abbreviation": "CO",
+			"name": "Centro-Oeste"
+		}
+	},
+	{
+		"id": 53,
+		"abbreviation": "DF",
+		"name": "Distrito Federal",
+		"regiao": {
+			"id": 5,
+			"abbreviation": "CO",
+			"name": "Centro-Oeste"
+		}
+	}
+]

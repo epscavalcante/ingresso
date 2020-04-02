@@ -1,0 +1,607 @@
+[
+	{
+		"DadosBancoCodBancoUID" : 1,
+		"febrabanCode" : "0",
+		"name" : " Banco Bankpar S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 2,
+		"febrabanCode" : "1",
+		"name" : " Banco do Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 3,
+		"febrabanCode" : "3",
+		"name" : " Banco da Amazônia S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 4,
+		"febrabanCode" : "4",
+		"name" : " Banco do Nordeste do Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 5,
+		"febrabanCode" : "12",
+		"name" : " Banco Standard de Investimentos S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 6,
+		"febrabanCode" : "21",
+		"name" : " BANESTES S.A. Banco do Estado do Espírito Santo"
+	},
+	{
+		"DadosBancoCodBancoUID" : 7,
+		"febrabanCode" : "24",
+		"name" : " Banco de Pernambuco S.A. - BANDEPE"
+	},
+	{
+		"DadosBancoCodBancoUID" : 8,
+		"febrabanCode" : "25",
+		"name" : " Banco Alfa S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 9,
+		"febrabanCode" : "29",
+		"name" : " Banco Banerj S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 10,
+		"febrabanCode" : "31",
+		"name" : " Banco Beg S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 11,
+		"febrabanCode" : "33",
+		"name" : " Banco Santander (Brasil) S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 12,
+		"febrabanCode" : "36",
+		"name" : " Banco Bradesco BBI S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 13,
+		"febrabanCode" : "37",
+		"name" : " Banco do Estado do Pará S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 14,
+		"febrabanCode" : "40",
+		"name" : " Banco Cargill S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 15,
+		"febrabanCode" : "41",
+		"name" : " Banco do Estado do Rio Grande do Sul S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 16,
+		"febrabanCode" : "44",
+		"name" : " Banco BVA S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 17,
+		"febrabanCode" : "45",
+		"name" : " Banco Opportunity S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 18,
+		"febrabanCode" : "47",
+		"name" : " Banco do Estado de Sergipe S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 19,
+		"febrabanCode" : "62",
+		"name" : " Hipercard Banco Múltiplo S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 20,
+		"febrabanCode" : "63",
+		"name" : " Banco Ibi S.A. Banco Múltiplo"
+	},
+	{
+		"DadosBancoCodBancoUID" : 21,
+		"febrabanCode" : "64",
+		"name" : " Goldman Sachs do Brasil Banco Múltiplo S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 22,
+		"febrabanCode" : "65",
+		"name" : " Banco Bracce S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 23,
+		"febrabanCode" : "69",
+		"name" : " BPN Brasil Banco Múltiplo S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 24,
+		"febrabanCode" : "70",
+		"name" : " BRB - Banco de Brasília S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 25,
+		"febrabanCode" : "72",
+		"name" : " Banco Rural Mais S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 26,
+		"febrabanCode" : "73",
+		"name" : "BB Banco Popular do Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 27,
+		"febrabanCode" : "74",
+		"name" : " Banco J. Safra S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 28,
+		"febrabanCode" : "78",
+		"name" : "BES Investimento do Brasil S.A.-Banco de Investimento"
+	},
+	{
+		"DadosBancoCodBancoUID" : 29,
+		"febrabanCode" : "79",
+		"name" : " Banco JBS S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 30,
+		"febrabanCode" : "96",
+		"name" : " Banco BM&F de Serviços de Liquidação e Custódia S.A"
+	},
+	{
+		"DadosBancoCodBancoUID" : 31,
+		"febrabanCode" : "104",
+		"name" : " Caixa Econômica Federal"
+	},
+	{
+		"DadosBancoCodBancoUID" : 32,
+		"febrabanCode" : "107",
+		"name" : " Banco BBM S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 33,
+		"febrabanCode" : "119",
+		"name" : " Banco Western Union do Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 34,
+		"febrabanCode" : "184",
+		"name" : " Banco Itaú BBA S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 35,
+		"febrabanCode" : "204",
+		"name" : " Banco Bradesco Cartões S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 36,
+		"febrabanCode" : "208",
+		"name" : " Banco BTG Pactual S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 37,
+		"febrabanCode" : "214",
+		"name" : " Banco Dibens S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 38,
+		"febrabanCode" : "215",
+		"name" : " Banco Comercial e de Investimento Sudameris S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 39,
+		"febrabanCode" : "217",
+		"name" : " Banco John Deere S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 40,
+		"febrabanCode" : "218",
+		"name" : " Banco Bonsucesso S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 41,
+		"febrabanCode" : "222",
+		"name" : "Banco Credit Agricole Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 42,
+		"febrabanCode" : "224",
+		"name" : "Banco Fibra S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 43,
+		"febrabanCode" : "225",
+		"name" : " Banco Brascan S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 44,
+		"febrabanCode" : "229",
+		"name" : " Banco Cruzeiro do Sul S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 45,
+		"febrabanCode" : "230",
+		"name" : " Unicard Banco Múltiplo S.A. "
+	},
+	{
+		"DadosBancoCodBancoUID" : 46,
+		"febrabanCode" : "233",
+		"name" : " Banco Cifra S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 47,
+		"febrabanCode" : "237",
+		"name" : " Banco Bradesco S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 48,
+		"febrabanCode" : "246",
+		"name" : " Banco ABC Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 49,
+		"febrabanCode" : "248",
+		"name" : " Banco Boavista Interatlântico S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 50,
+		"febrabanCode" : "249",
+		"name" : " Banco Investcred Unibanco S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 51,
+		"febrabanCode" : "250",
+		"name" : " Banco Schahin S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 52,
+		"febrabanCode" : "263",
+		"name" : " Banco Cacique S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 53,
+		"febrabanCode" : "265",
+		"name" : " Banco Fator S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 54,
+		"febrabanCode" : "318",
+		"name" : " Banco BMG S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 55,
+		"febrabanCode" : "320",
+		"name" : " Banco Industrial e Comercial S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 56,
+		"febrabanCode" : "341",
+		"name" : " Itaú Unibanco S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 57,
+		"febrabanCode" : "356",
+		"name" : " Banco Real S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 58,
+		"febrabanCode" : "366",
+		"name" : " Banco Société Générale Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 59,
+		"febrabanCode" : "370",
+		"name" : " Banco WestLB do Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 60,
+		"febrabanCode" : "376",
+		"name" : " Banco J. P. Morgan S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 61,
+		"febrabanCode" : "389",
+		"name" : " Banco Mercantil do Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 62,
+		"febrabanCode" : "394",
+		"name" : " Banco Bradesco Financiamentos S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 63,
+		"febrabanCode" : "394",
+		"name" : " Banco Finasa BMC S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 64,
+		"febrabanCode" : "399",
+		"name" : " HSBC Bank Brasil S.A. - Banco Múltiplo"
+	},
+	{
+		"DadosBancoCodBancoUID" : 65,
+		"febrabanCode" : "409",
+		"name" : " UNIBANCO - União de Bancos Brasileiros S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 66,
+		"febrabanCode" : "422",
+		"name" : " Banco Safra S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 67,
+		"febrabanCode" : "453",
+		"name" : " Banco Rural S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 68,
+		"febrabanCode" : "456",
+		"name" : " Banco de Tokyo-Mitsubishi UFJ Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 69,
+		"febrabanCode" : "464",
+		"name" : " Banco Sumitomo Mitsui Brasileiro S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 70,
+		"febrabanCode" : "473",
+		"name" : " Banco Caixa Geral - Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 71,
+		"febrabanCode" : "477",
+		"name" : " Citibank S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 72,
+		"febrabanCode" : "479",
+		"name" : " Banco ItaúBank S.A"
+	},
+	{
+		"DadosBancoCodBancoUID" : 73,
+		"febrabanCode" : "487",
+		"name" : " Deutsche Bank S.A. - Banco Alemão"
+	},
+	{
+		"DadosBancoCodBancoUID" : 74,
+		"febrabanCode" : "488",
+		"name" : " JPMorgan Chase Bank"
+	},
+	{
+		"DadosBancoCodBancoUID" : 75,
+		"febrabanCode" : "492",
+		"name" : " ING Bank N.V."
+	},
+	{
+		"DadosBancoCodBancoUID" : 76,
+		"febrabanCode" : "505",
+		"name" : " Banco Credit Suisse (Brasil) S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 77,
+		"febrabanCode" : "600",
+		"name" : " Banco Luso Brasileiro S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 78,
+		"febrabanCode" : "604",
+		"name" : " Banco Industrial do Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 79,
+		"febrabanCode" : "610",
+		"name" : " Banco VR S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 80,
+		"febrabanCode" : "611",
+		"name" : " Banco Paulista S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 81,
+		"febrabanCode" : "612",
+		"name" : " Banco Guanabara S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 82,
+		"febrabanCode" : "623",
+		"name" : " Banco Panamericano S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 83,
+		"febrabanCode" : "626",
+		"name" : "Banco Ficsa S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 84,
+		"febrabanCode" : "633",
+		"name" : " Banco Rendimento S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 85,
+		"febrabanCode" : "634",
+		"name" : " Banco Triângulo S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 86,
+		"febrabanCode" : "637",
+		"name" : " Banco Sofisa S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 87,
+		"febrabanCode" : "638",
+		"name" : " Banco Prosper S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 88,
+		"febrabanCode" : "641",
+		"name" : " Banco Alvorada S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 89,
+		"febrabanCode" : "643",
+		"name" : " Banco Pine S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 90,
+		"febrabanCode" : "652",
+		"name" : " Itaú Unibanco Holding S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 91,
+		"febrabanCode" : "653",
+		"name" : " Banco Indusval S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 92,
+		"febrabanCode" : "655",
+		"name" : " Banco Votorantim S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 93,
+		"febrabanCode" : "707",
+		"name" : " Banco Daycoval S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 94,
+		"febrabanCode" : "719",
+		"name" : " Banif-Banco Internacional do Funchal (Brasil)S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 95,
+		"febrabanCode" : "739",
+		"name" : " Banco BGN S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 96,
+		"febrabanCode" : "740",
+		"name" : " Banco Barclays S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 97,
+		"febrabanCode" : "745",
+		"name" : " Banco Citibank S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 98,
+		"febrabanCode" : "746",
+		"name" : " Banco Modal S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 99,
+		"febrabanCode" : "747",
+		"name" : " Banco Rabobank International Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 100,
+		"febrabanCode" : "748",
+		"name" : " Banco Cooperativo Sicredi S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 101,
+		"febrabanCode" : "749",
+		"name" : " Banco Simples S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 102,
+		"febrabanCode" : "751",
+		"name" : " Scotiabank Brasil S.A. Banco Múltiplo"
+	},
+	{
+		"DadosBancoCodBancoUID" : 103,
+		"febrabanCode" : "752",
+		"name" : " Banco BNP Paribas Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 104,
+		"febrabanCode" : "755",
+		"name" : " Bank of America Merrill Lynch Banco Múltiplo S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 105,
+		"febrabanCode" : "756",
+		"name" : " Banco Cooperativo do Brasil S.A. - BANCOOB"
+	},
+	{
+		"DadosBancoCodBancoUID" : 106,
+		"febrabanCode" : "081-7",
+		"name" : " Concórdia Banco S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 107,
+		"febrabanCode" : "082-5",
+		"name" : " Banco Topázio S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 108,
+		"febrabanCode" : "083-3",
+		"name" : " Banco da China Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 109,
+		"febrabanCode" : "M03",
+		"name" : " Banco Fiat S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 110,
+		"febrabanCode" : "M06",
+		"name" : " Banco de Lage Landen Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 111,
+		"febrabanCode" : "M07",
+		"name" : " Banco GMAC S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 112,
+		"febrabanCode" : "M08",
+		"name" : " Banco Citicard S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 113,
+		"febrabanCode" : "M09",
+		"name" : " Banco Itaucred Financiamentos S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 114,
+		"febrabanCode" : "M11",
+		"name" : " Banco IBM S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 115,
+		"febrabanCode" : "M14",
+		"name" : " Banco Volkswagen S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 116,
+		"febrabanCode" : "M16",
+		"name" : " Banco Rodobens S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 117,
+		"febrabanCode" : "M18",
+		"name" : " Banco Ford S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 118,
+		"febrabanCode" : "M19",
+		"name" : " Banco CNH Capital S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 119,
+		"febrabanCode" : "M20",
+		"name" : " Banco Toyota do Brasil S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 120,
+		"febrabanCode" : "M22",
+		"name" : " Banco Honda S.A."
+	},
+	{
+		"DadosBancoCodBancoUID" : 121,
+		"febrabanCode" : "M23",
+		"name" : " Banco Volvo (Brasil) S.A."
+	}
+]

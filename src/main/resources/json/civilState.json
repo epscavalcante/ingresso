@@ -1,0 +1,30 @@
+[
+	{
+		"estadoCivilUID" : 1,
+		"name" : "Solteiro(a)"
+	},
+	{
+		"estadoCivilUID" : 2,
+		"name" : "Casado(a) \/ Mora com um(a) companheiro(a)"
+	},
+	{
+		"estadoCivilUID" : 3,
+		"name" : "Divorciado(a) \/ Desquitado(a) \/ Separado(a)"
+	},
+	{
+		"estadoCivilUID" : 4,
+		"name" : "Viúvo(a)"
+	},
+	{
+		"estadoCivilUID" : 5,
+		"name" : "União Estavel"
+	},
+	{
+		"estadoCivilUID" : 6,
+		"name" : "Casado conforme Costumes povo indígena"
+	},
+	{
+		"estadoCivilUID" : 7,
+		"name" : "Outros"
+	}
+]

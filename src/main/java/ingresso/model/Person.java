@@ -58,6 +58,7 @@ public class Person {
 
 	private String socialName;
 
+	@OneToOne
 	private BankAccount bankAccount;
 
 	@PrePersist

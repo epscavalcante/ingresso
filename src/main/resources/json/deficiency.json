@@ -1,0 +1,38 @@
+[
+	{
+		"deficienciaUID" : 1,
+		"name" : "Baixa Visão"
+	},
+	{
+		"deficienciaUID" : 2,
+		"name" : "Cegueira"
+	},
+	{
+		"deficienciaUID" : 3,
+		"name" : "Deficiência Auditiva"
+	},
+	{
+		"deficienciaUID" : 4,
+		"name" : "Deficiência Física"
+	},
+	{
+		"deficienciaUID" : 5,
+		"name" : "Deficiência Mental"
+	},
+	{
+		"deficienciaUID" : 6,
+		"name" : "Deficiência Múltipla"
+	},
+	{
+		"deficienciaUID" : 7,
+		"name" : "Surdez"
+	},
+	{
+		"deficienciaUID" : 8,
+		"name" : "Surdocegueira"
+	},
+	{
+		"deficienciaUID" : 9,
+		"name" : "Outros"
+	}
+]

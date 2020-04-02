@@ -1,0 +1,30 @@
+[
+	{
+		"generoSexualUID" : 1,
+		"name" : "Bissexual"
+	},
+	{
+		"generoSexualUID" : 2,
+		"name" : "Gay"
+	},
+	{
+		"generoSexualUID" : 3,
+		"name" : "Lésbica"
+	},
+	{
+		"generoSexualUID" : 4,
+		"name" : "Transgênero"
+	},
+	{
+		"generoSexualUID" : 5,
+		"name" : "Transsexual"
+	},
+	{
+		"generoSexualUID" : 6,
+		"name" : "Travesti"
+	},
+	{
+		"generoSexualUID" : 7,
+		"name" : "Heterossexual"
+	}
+]
