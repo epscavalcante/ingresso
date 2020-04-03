@@ -1,0 +1,1038 @@
+[
+	{
+		"cursoSuperiorUID" : 1,
+		"name" : "Administração"
+	},
+	{
+		"cursoSuperiorUID" : 2,
+		"name" : "Administração pública"
+	},
+	{
+		"cursoSuperiorUID" : 3,
+		"name" : "Agronegócios"
+	},
+	{
+		"cursoSuperiorUID" : 4,
+		"name" : "Alimentos"
+	},
+	{
+		"cursoSuperiorUID" : 5,
+		"name" : "Análise de sistemas"
+	},
+	{
+		"cursoSuperiorUID" : 6,
+		"name" : "Análise de sistemas e tecnologia da informação"
+	},
+	{
+		"cursoSuperiorUID" : 7,
+		"name" : "Análise e desenvolvimento de sistemas"
+	},
+	{
+		"cursoSuperiorUID" : 8,
+		"name" : "Antropologia"
+	},
+	{
+		"cursoSuperiorUID" : 9,
+		"name" : "Arqueologia"
+	},
+	{
+		"cursoSuperiorUID" : 10,
+		"name" : "Arquitetura e urbanismo"
+	},
+	{
+		"cursoSuperiorUID" : 11,
+		"name" : "Arquivologia"
+	},
+	{
+		"cursoSuperiorUID" : 12,
+		"name" : "Artes cênicas"
+	},
+	{
+		"cursoSuperiorUID" : 13,
+		"name" : "Artes plásticas"
+	},
+	{
+		"cursoSuperiorUID" : 14,
+		"name" : "Artes visuais"
+	},
+	{
+		"cursoSuperiorUID" : 15,
+		"name" : "Astronomia"
+	},
+	{
+		"cursoSuperiorUID" : 16,
+		"name" : "Audiovisual"
+	},
+	{
+		"cursoSuperiorUID" : 17,
+		"name" : "Automação de escritório e secretariado"
+	},
+	{
+		"cursoSuperiorUID" : 18,
+		"name" : "Automação industrial"
+	},
+	{
+		"cursoSuperiorUID" : 19,
+		"name" : "Biblioteconomia"
+	},
+	{
+		"cursoSuperiorUID" : 20,
+		"name" : "Bioenergia sucroalcooleira"
+	},
+	{
+		"cursoSuperiorUID" : 21,
+		"name" : "Bioengenharia"
+	},
+	{
+		"cursoSuperiorUID" : 22,
+		"name" : "Biotecnologia"
+	},
+	{
+		"cursoSuperiorUID" : 23,
+		"name" : "Ciência da computação"
+	},
+	{
+		"cursoSuperiorUID" : 24,
+		"name" : "Ciência da computação e informática"
+	},
+	{
+		"cursoSuperiorUID" : 25,
+		"name" : "Ciência da informação"
+	},
+	{
+		"cursoSuperiorUID" : 26,
+		"name" : "Ciência dos alimentos"
+	},
+	{
+		"cursoSuperiorUID" : 27,
+		"name" : "Ciência e tecnologia"
+	},
+	{
+		"cursoSuperiorUID" : 28,
+		"name" : "Ciências ambientais"
+	},
+	{
+		"cursoSuperiorUID" : 29,
+		"name" : "Ciências atuariais"
+	},
+	{
+		"cursoSuperiorUID" : 30,
+		"name" : "Ciências biológicas - biofísica"
+	},
+	{
+		"cursoSuperiorUID" : 31,
+		"name" : "Ciências biológicas - biologia marinha"
+	},
+	{
+		"cursoSuperiorUID" : 32,
+		"name" : "Ciências biológicas - biomedicina"
+	},
+	{
+		"cursoSuperiorUID" : 33,
+		"name" : "Ciências biológicas - gerenciamento costeiro"
+	},
+	{
+		"cursoSuperiorUID" : 34,
+		"name" : "Ciências biológicas - microbiologia e imunologia"
+	},
+	{
+		"cursoSuperiorUID" : 35,
+		"name" : "Ciências biológicas"
+	},
+	{
+		"cursoSuperiorUID" : 36,
+		"name" : "Ciências biomédicas"
+	},
+	{
+		"cursoSuperiorUID" : 37,
+		"name" : "Ciências contábeis"
+	},
+	{
+		"cursoSuperiorUID" : 38,
+		"name" : "Ciências da atividade física"
+	},
+	{
+		"cursoSuperiorUID" : 39,
+		"name" : "Ciências da Terra"
+	},
+	{
+		"cursoSuperiorUID" : 40,
+		"name" : "Ciências do esporte"
+	},
+	{
+		"cursoSuperiorUID" : 41,
+		"name" : "Ciências do Estado"
+	},
+	{
+		"cursoSuperiorUID" : 42,
+		"name" : "Ciências econômicas"
+	},
+	{
+		"cursoSuperiorUID" : 43,
+		"name" : "Ciências exatas"
+	},
+	{
+		"cursoSuperiorUID" : 44,
+		"name" : "Ciências físicas e biomoleculares"
+	},
+	{
+		"cursoSuperiorUID" : 45,
+		"name" : "Ciências fundamentais da saúde"
+	},
+	{
+		"cursoSuperiorUID" : 46,
+		"name" : "Ciências moleculares"
+	},
+	{
+		"cursoSuperiorUID" : 47,
+		"name" : "Ciências naturais"
+	},
+	{
+		"cursoSuperiorUID" : 48,
+		"name" : "Ciências políticas"
+	},
+	{
+		"cursoSuperiorUID" : 49,
+		"name" : "Ciências químicas e farmacêuticas"
+	},
+	{
+		"cursoSuperiorUID" : 50,
+		"name" : "Ciências sociais"
+	},
+	{
+		"cursoSuperiorUID" : 51,
+		"name" : "Cinema"
+	},
+	{
+		"cursoSuperiorUID" : 52,
+		"name" : "Comércio exterior"
+	},
+	{
+		"cursoSuperiorUID" : 53,
+		"name" : "Composição de interior"
+	},
+	{
+		"cursoSuperiorUID" : 54,
+		"name" : "Composição paisagística"
+	},
+	{
+		"cursoSuperiorUID" : 55,
+		"name" : "Computação"
+	},
+	{
+		"cursoSuperiorUID" : 56,
+		"name" : "Computação científica"
+	},
+	{
+		"cursoSuperiorUID" : 57,
+		"name" : "Comunicação social"
+	},
+	{
+		"cursoSuperiorUID" : 58,
+		"name" : "Construção civil - edifícios"
+	},
+	{
+		"cursoSuperiorUID" : 59,
+		"name" : "Construção civil - movimento de terra e pavimentação"
+	},
+	{
+		"cursoSuperiorUID" : 60,
+		"name" : "Construção civil"
+	},
+	{
+		"cursoSuperiorUID" : 61,
+		"name" : "Construção e manutenção de sistemas de navegação fluvial"
+	},
+	{
+		"cursoSuperiorUID" : 62,
+		"name" : "Dança"
+	},
+	{
+		"cursoSuperiorUID" : 63,
+		"name" : "Desenho industrial - programação visual"
+	},
+	{
+		"cursoSuperiorUID" : 64,
+		"name" : "Desenho industrial - projeto de produto"
+	},
+	{
+		"cursoSuperiorUID" : 65,
+		"name" : "Desenvolvimento de jogos digitais"
+	},
+	{
+		"cursoSuperiorUID" : 66,
+		"name" : "Design"
+	},
+	{
+		"cursoSuperiorUID" : 67,
+		"name" : "Direção teatral"
+	},
+	{
+		"cursoSuperiorUID" : 68,
+		"name" : "Direito"
+	},
+	{
+		"cursoSuperiorUID" : 69,
+		"name" : "Ecologia"
+	},
+	{
+		"cursoSuperiorUID" : 70,
+		"name" : "Editoração"
+	},
+	{
+		"cursoSuperiorUID" : 71,
+		"name" : "Educação artística"
+	},
+	{
+		"cursoSuperiorUID" : 72,
+		"name" : "Educação física"
+	},
+	{
+		"cursoSuperiorUID" : 73,
+		"name" : "Educação musical"
+	},
+	{
+		"cursoSuperiorUID" : 74,
+		"name" : "Educador em geociências e meio ambiente"
+	},
+	{
+		"cursoSuperiorUID" : 75,
+		"name" : "Eletrônica - automação industrial"
+	},
+	{
+		"cursoSuperiorUID" : 76,
+		"name" : "Eletrônica - autotrônica"
+	},
+	{
+		"cursoSuperiorUID" : 77,
+		"name" : "Enfermagem"
+	},
+	{
+		"cursoSuperiorUID" : 78,
+		"name" : "Engenharia aeroespacial"
+	},
+	{
+		"cursoSuperiorUID" : 79,
+		"name" : "Engenharia aeronáutica"
+	},
+	{
+		"cursoSuperiorUID" : 80,
+		"name" : "Engenharia agrícola"
+	},
+	{
+		"cursoSuperiorUID" : 81,
+		"name" : "Engenharia agronômica"
+	},
+	{
+		"cursoSuperiorUID" : 82,
+		"name" : "Engenharia ambiental"
+	},
+	{
+		"cursoSuperiorUID" : 83,
+		"name" : "Engenharia ambiental e urbana"
+	},
+	{
+		"cursoSuperiorUID" : 84,
+		"name" : "Engenharia biofísica"
+	},
+	{
+		"cursoSuperiorUID" : 85,
+		"name" : "Engenharia biológica"
+	},
+	{
+		"cursoSuperiorUID" : 86,
+		"name" : "Engenharia biomédica"
+	},
+	{
+		"cursoSuperiorUID" : 87,
+		"name" : "Engenharia biotecnológica"
+	},
+	{
+		"cursoSuperiorUID" : 88,
+		"name" : "Engenharia cartográfica"
+	},
+	{
+		"cursoSuperiorUID" : 89,
+		"name" : "Engenharia civil"
+	},
+	{
+		"cursoSuperiorUID" : 90,
+		"name" : "Engenharia da qualidade"
+	},
+	{
+		"cursoSuperiorUID" : 91,
+		"name" : "Engenharia de agrimensura"
+	},
+	{
+		"cursoSuperiorUID" : 92,
+		"name" : "Engenharia de alimentos"
+	},
+	{
+		"cursoSuperiorUID" : 93,
+		"name" : "Engenharia de aqüicultura"
+	},
+	{
+		"cursoSuperiorUID" : 94,
+		"name" : "Engenharia de áudio"
+	},
+	{
+		"cursoSuperiorUID" : 95,
+		"name" : "Engenharia de bioprocessos"
+	},
+	{
+		"cursoSuperiorUID" : 96,
+		"name" : "Engenharia de computação"
+	},
+	{
+		"cursoSuperiorUID" : 97,
+		"name" : "Engenharia de controle e automação"
+	},
+	{
+		"cursoSuperiorUID" : 98,
+		"name" : "Engenharia de energia"
+	},
+	{
+		"cursoSuperiorUID" : 99,
+		"name" : "Engenharia de gestão"
+	},
+	{
+		"cursoSuperiorUID" : 100,
+		"name" : "Engenharia de informação"
+	},
+	{
+		"cursoSuperiorUID" : 101,
+		"name" : "Engenharia de instrumentação"
+	},
+	{
+		"cursoSuperiorUID" : 102,
+		"name" : "Engenharia de instrumentação, automação e robótica"
+	},
+	{
+		"cursoSuperiorUID" : 103,
+		"name" : "Engenharia de manufatura"
+	},
+	{
+		"cursoSuperiorUID" : 104,
+		"name" : "Engenharia de manutenção"
+	},
+	{
+		"cursoSuperiorUID" : 105,
+		"name" : "Engenharia de materiais"
+	},
+	{
+		"cursoSuperiorUID" : 106,
+		"name" : "Engenharia de minas"
+	},
+	{
+		"cursoSuperiorUID" : 107,
+		"name" : "Engenharia de pesca"
+	},
+	{
+		"cursoSuperiorUID" : 108,
+		"name" : "Engenharia de petróleo"
+	},
+	{
+		"cursoSuperiorUID" : 109,
+		"name" : "Engenharia de produção"
+	},
+	{
+		"cursoSuperiorUID" : 110,
+		"name" : "Engenharia de serviços"
+	},
+	{
+		"cursoSuperiorUID" : 111,
+		"name" : "Engenharia de sistemas e informática"
+	},
+	{
+		"cursoSuperiorUID" : 112,
+		"name" : "Engenharia de sistemas eletrônicos"
+	},
+	{
+		"cursoSuperiorUID" : 113,
+		"name" : "Engenharia de software"
+	},
+	{
+		"cursoSuperiorUID" : 114,
+		"name" : "Engenharia de tecidos"
+	},
+	{
+		"cursoSuperiorUID" : 115,
+		"name" : "Engenharia de telecomunicações"
+	},
+	{
+		"cursoSuperiorUID" : 116,
+		"name" : "Engenharia de transportes"
+	},
+	{
+		"cursoSuperiorUID" : 117,
+		"name" : "Engenharia econômica"
+	},
+	{
+		"cursoSuperiorUID" : 118,
+		"name" : "Engenharia elétrica"
+	},
+	{
+		"cursoSuperiorUID" : 119,
+		"name" : "Engenharia eletrônica"
+	},
+	{
+		"cursoSuperiorUID" : 120,
+		"name" : "Engenharia eletrônica e de computação"
+	},
+	{
+		"cursoSuperiorUID" : 121,
+		"name" : "Engenharia estrutural"
+	},
+	{
+		"cursoSuperiorUID" : 122,
+		"name" : "Engenharia física"
+	},
+	{
+		"cursoSuperiorUID" : 123,
+		"name" : "Engenharia florestal"
+	},
+	{
+		"cursoSuperiorUID" : 124,
+		"name" : "Engenharia geofísica"
+	},
+	{
+		"cursoSuperiorUID" : 125,
+		"name" : "Engenharia geográfica"
+	},
+	{
+		"cursoSuperiorUID" : 126,
+		"name" : "Engenharia geológica"
+	},
+	{
+		"cursoSuperiorUID" : 127,
+		"name" : "Engenharia hidráulica"
+	},
+	{
+		"cursoSuperiorUID" : 128,
+		"name" : "Engenharia humana"
+	},
+	{
+		"cursoSuperiorUID" : 129,
+		"name" : "Engenharia industrial"
+	},
+	{
+		"cursoSuperiorUID" : 130,
+		"name" : "Engenharia industrial madeireira"
+	},
+	{
+		"cursoSuperiorUID" : 131,
+		"name" : "Engenharia mecânica"
+	},
+	{
+		"cursoSuperiorUID" : 132,
+		"name" : "Engenharia mecatrônica"
+	},
+	{
+		"cursoSuperiorUID" : 133,
+		"name" : "Engenharia metalúrgica"
+	},
+	{
+		"cursoSuperiorUID" : 134,
+		"name" : "Engenharia militar"
+	},
+	{
+		"cursoSuperiorUID" : 135,
+		"name" : "Engenharia multimídia"
+	},
+	{
+		"cursoSuperiorUID" : 136,
+		"name" : "Engenharia naval e oceânica"
+	},
+	{
+		"cursoSuperiorUID" : 137,
+		"name" : "Engenharia nuclear"
+	},
+	{
+		"cursoSuperiorUID" : 138,
+		"name" : "Engenharia óptica"
+	},
+	{
+		"cursoSuperiorUID" : 139,
+		"name" : "Engenharia química"
+	},
+	{
+		"cursoSuperiorUID" : 140,
+		"name" : "Engenharia sanitária"
+	},
+	{
+		"cursoSuperiorUID" : 141,
+		"name" : "Engenharia têxtil"
+	},
+	{
+		"cursoSuperiorUID" : 142,
+		"name" : "Escultura"
+	},
+	{
+		"cursoSuperiorUID" : 143,
+		"name" : "Esporte"
+	},
+	{
+		"cursoSuperiorUID" : 144,
+		"name" : "Estatística"
+	},
+	{
+		"cursoSuperiorUID" : 145,
+		"name" : "Estudos literários"
+	},
+	{
+		"cursoSuperiorUID" : 146,
+		"name" : "Eventos"
+	},
+	{
+		"cursoSuperiorUID" : 147,
+		"name" : "Farmácia - bioquímica"
+	},
+	{
+		"cursoSuperiorUID" : 148,
+		"name" : "Farmácia"
+	},
+	{
+		"cursoSuperiorUID" : 149,
+		"name" : "Filosofia"
+	},
+	{
+		"cursoSuperiorUID" : 150,
+		"name" : "Física"
+	},
+	{
+		"cursoSuperiorUID" : 151,
+		"name" : "Física biológica"
+	},
+	{
+		"cursoSuperiorUID" : 152,
+		"name" : "Física computacional"
+	},
+	{
+		"cursoSuperiorUID" : 153,
+		"name" : "Física médica"
+	},
+	{
+		"cursoSuperiorUID" : 154,
+		"name" : "Fisioterapia"
+	},
+	{
+		"cursoSuperiorUID" : 155,
+		"name" : "Fonoaudiologia"
+	},
+	{
+		"cursoSuperiorUID" : 156,
+		"name" : "Gastronomia"
+	},
+	{
+		"cursoSuperiorUID" : 157,
+		"name" : "Geofísica"
+	},
+	{
+		"cursoSuperiorUID" : 158,
+		"name" : "Geografia"
+	},
+	{
+		"cursoSuperiorUID" : 159,
+		"name" : "Geologia"
+	},
+	{
+		"cursoSuperiorUID" : 160,
+		"name" : "Gerontologia"
+	},
+	{
+		"cursoSuperiorUID" : 161,
+		"name" : "Gestão ambiental"
+	},
+	{
+		"cursoSuperiorUID" : 162,
+		"name" : "Gestão da produção de calçados"
+	},
+	{
+		"cursoSuperiorUID" : 163,
+		"name" : "Gestão de agronegócio"
+	},
+	{
+		"cursoSuperiorUID" : 164,
+		"name" : "Gestão de comércio internacional"
+	},
+	{
+		"cursoSuperiorUID" : 165,
+		"name" : "Gestão de empresas"
+	},
+	{
+		"cursoSuperiorUID" : 166,
+		"name" : "Gestão de políticas públicas"
+	},
+	{
+		"cursoSuperiorUID" : 167,
+		"name" : "Gestão empresarial - comércio exterior"
+	},
+	{
+		"cursoSuperiorUID" : 168,
+		"name" : "Gestão empresarial - logística aeroportuária"
+	},
+	{
+		"cursoSuperiorUID" : 169,
+		"name" : "Gestão empresarial - marketing"
+	},
+	{
+		"cursoSuperiorUID" : 170,
+		"name" : "Gestão empresarial - secretariado executivo"
+	},
+	{
+		"cursoSuperiorUID" : 171,
+		"name" : "Gestão empresarial - sistemas de informação"
+	},
+	{
+		"cursoSuperiorUID" : 172,
+		"name" : "Gestão empresarial"
+	},
+	{
+		"cursoSuperiorUID" : 173,
+		"name" : "Gravura"
+	},
+	{
+		"cursoSuperiorUID" : 174,
+		"name" : "Hidráulica e saneamento ambiental"
+	},
+	{
+		"cursoSuperiorUID" : 175,
+		"name" : "História da arte"
+	},
+	{
+		"cursoSuperiorUID" : 176,
+		"name" : "História"
+	},
+	{
+		"cursoSuperiorUID" : 177,
+		"name" : "Hotelaria"
+	},
+	{
+		"cursoSuperiorUID" : 178,
+		"name" : "Informática"
+	},
+	{
+		"cursoSuperiorUID" : 179,
+		"name" : "Informática - banco de dados"
+	},
+	{
+		"cursoSuperiorUID" : 180,
+		"name" : "Informática - gestão da produção industrial"
+	},
+	{
+		"cursoSuperiorUID" : 181,
+		"name" : "Informática - gestão financeira"
+	},
+	{
+		"cursoSuperiorUID" : 182,
+		"name" : "Informática - redes de computadores"
+	},
+	{
+		"cursoSuperiorUID" : 183,
+		"name" : "Informática biomédica"
+	},
+	{
+		"cursoSuperiorUID" : 184,
+		"name" : "Informática para a gestão de negócios"
+	},
+	{
+		"cursoSuperiorUID" : 185,
+		"name" : "Jornalismo"
+	},
+	{
+		"cursoSuperiorUID" : 186,
+		"name" : "Lazer"
+	},
+	{
+		"cursoSuperiorUID" : 187,
+		"name" : "Letras"
+	},
+	{
+		"cursoSuperiorUID" : 188,
+		"name" : "Linguística"
+	},
+	{
+		"cursoSuperiorUID" : 189,
+		"name" : "Logística"
+	},
+	{
+		"cursoSuperiorUID" : 190,
+		"name" : "Logística aeroportuária"
+	},
+	{
+		"cursoSuperiorUID" : 191,
+		"name" : "Logística e transportes"
+	},
+	{
+		"cursoSuperiorUID" : 192,
+		"name" : "Logística para o agronegócio - mercado internacional"
+	},
+	{
+		"cursoSuperiorUID" : 193,
+		"name" : "Logística para o agronegócio"
+	},
+	{
+		"cursoSuperiorUID" : 194,
+		"name" : "Marketing"
+	},
+	{
+		"cursoSuperiorUID" : 195,
+		"name" : "Matemática"
+	},
+	{
+		"cursoSuperiorUID" : 196,
+		"name" : "Matemática aplicada"
+	},
+	{
+		"cursoSuperiorUID" : 197,
+		"name" : "Matemática computacional"
+	},
+	{
+		"cursoSuperiorUID" : 198,
+		"name" : "Materiais - materiais cerâmicos"
+	},
+	{
+		"cursoSuperiorUID" : 199,
+		"name" : "Materiais - materiais metálicos"
+	},
+	{
+		"cursoSuperiorUID" : 200,
+		"name" : "Materiais - materiais poliméricos"
+	},
+	{
+		"cursoSuperiorUID" : 201,
+		"name" : "Materiais, processos e componentes eletrônicos"
+	},
+	{
+		"cursoSuperiorUID" : 202,
+		"name" : "Mecânica - processos de produção"
+	},
+	{
+		"cursoSuperiorUID" : 203,
+		"name" : "Mecânica - projetos"
+	},
+	{
+		"cursoSuperiorUID" : 204,
+		"name" : "Mecânica - soldagem"
+	},
+	{
+		"cursoSuperiorUID" : 205,
+		"name" : "Mecânica de precisão"
+	},
+	{
+		"cursoSuperiorUID" : 206,
+		"name" : "Medicina veterinária"
+	},
+	{
+		"cursoSuperiorUID" : 207,
+		"name" : "Medicina"
+	},
+	{
+		"cursoSuperiorUID" : 208,
+		"name" : "Meio ambiente e recursos hídricos"
+	},
+	{
+		"cursoSuperiorUID" : 209,
+		"name" : "Metalurgia"
+	},
+	{
+		"cursoSuperiorUID" : 210,
+		"name" : "Meteorologia"
+	},
+	{
+		"cursoSuperiorUID" : 211,
+		"name" : "Museologia"
+	},
+	{
+		"cursoSuperiorUID" : 212,
+		"name" : "Música"
+	},
+	{
+		"cursoSuperiorUID" : 213,
+		"name" : "Nutrição"
+	},
+	{
+		"cursoSuperiorUID" : 214,
+		"name" : "Obstetrícia"
+	},
+	{
+		"cursoSuperiorUID" : 215,
+		"name" : "Oceanografia"
+	},
+	{
+		"cursoSuperiorUID" : 216,
+		"name" : "Odontologia"
+	},
+	{
+		"cursoSuperiorUID" : 217,
+		"name" : "Operação e administração de sistemas de navegação fluvial"
+	},
+	{
+		"cursoSuperiorUID" : 218,
+		"name" : "Pedagogia"
+	},
+	{
+		"cursoSuperiorUID" : 219,
+		"name" : "Pintura"
+	},
+	{
+		"cursoSuperiorUID" : 220,
+		"name" : "Processamento de dados"
+	},
+	{
+		"cursoSuperiorUID" : 221,
+		"name" : "Produção"
+	},
+	{
+		"cursoSuperiorUID" : 222,
+		"name" : "Produção de materiais plásticos"
+	},
+	{
+		"cursoSuperiorUID" : 223,
+		"name" : "Produção de plásticos"
+	},
+	{
+		"cursoSuperiorUID" : 224,
+		"name" : "Psicologia"
+	},
+	{
+		"cursoSuperiorUID" : 225,
+		"name" : "Psicopedagogia"
+	},
+	{
+		"cursoSuperiorUID" : 226,
+		"name" : "Publicidade e propaganda"
+	},
+	{
+		"cursoSuperiorUID" : 227,
+		"name" : "Química"
+	},
+	{
+		"cursoSuperiorUID" : 228,
+		"name" : "Química ambiental"
+	},
+	{
+		"cursoSuperiorUID" : 229,
+		"name" : "Química industrial"
+	},
+	{
+		"cursoSuperiorUID" : 230,
+		"name" : "Radialismo"
+	},
+	{
+		"cursoSuperiorUID" : 231,
+		"name" : "Rádio e televisão"
+	},
+	{
+		"cursoSuperiorUID" : 232,
+		"name" : "Radiologia"
+	},
+	{
+		"cursoSuperiorUID" : 233,
+		"name" : "Recursos humanos"
+	},
+	{
+		"cursoSuperiorUID" : 234,
+		"name" : "Redes de empresas, associativismo e cooperativismo no agronegócio"
+	},
+	{
+		"cursoSuperiorUID" : 235,
+		"name" : "Relações internacionais"
+	},
+	{
+		"cursoSuperiorUID" : 236,
+		"name" : "Relações públicas"
+	},
+	{
+		"cursoSuperiorUID" : 237,
+		"name" : "Saneamento ambiental"
+	},
+	{
+		"cursoSuperiorUID" : 238,
+		"name" : "Saúde - projetos, manutenção e operação de aparelhos médico-hospitalares"
+	},
+	{
+		"cursoSuperiorUID" : 239,
+		"name" : "Secretariado"
+	},
+	{
+		"cursoSuperiorUID" : 240,
+		"name" : "Segurança da informação"
+	},
+	{
+		"cursoSuperiorUID" : 241,
+		"name" : "Serviço social"
+	},
+	{
+		"cursoSuperiorUID" : 242,
+		"name" : "Silvicultura"
+	},
+	{
+		"cursoSuperiorUID" : 243,
+		"name" : "Sistemas aeronáuticos - manufatura"
+	},
+	{
+		"cursoSuperiorUID" : 244,
+		"name" : "Sistemas aeronáuticos - mecânica e manutenção"
+	},
+	{
+		"cursoSuperiorUID" : 245,
+		"name" : "Sistemas de informação"
+	},
+	{
+		"cursoSuperiorUID" : 246,
+		"name" : "Teatro"
+	},
+	{
+		"cursoSuperiorUID" : 247,
+		"name" : "Tecnologia da informação"
+	},
+	{
+		"cursoSuperiorUID" : 248,
+		"name" : "Tecnologias em saúde - oftálmica e radiológica"
+	},
+	{
+		"cursoSuperiorUID" : 249,
+		"name" : "Telecomunicações"
+	},
+	{
+		"cursoSuperiorUID" : 250,
+		"name" : "Telemática"
+	},
+	{
+		"cursoSuperiorUID" : 251,
+		"name" : "Teologia"
+	},
+	{
+		"cursoSuperiorUID" : 252,
+		"name" : "Terapia ocupacional"
+	},
+	{
+		"cursoSuperiorUID" : 253,
+		"name" : "Têxtil"
+	},
+	{
+		"cursoSuperiorUID" : 254,
+		"name" : "Têxtil e moda"
+	},
+	{
+		"cursoSuperiorUID" : 255,
+		"name" : "Turismo"
+	},
+	{
+		"cursoSuperiorUID" : 256,
+		"name" : "Turismo e hospitalidade - eventos em negócios"
+	},
+	{
+		"cursoSuperiorUID" : 257,
+		"name" : "Turismo e hospitalidade - gestão de empreendimentos turísticos"
+	},
+	{
+		"cursoSuperiorUID" : 258,
+		"name" : "Urbanismo"
+	},
+	{
+		"cursoSuperiorUID" : 259,
+		"name" : "Zootecnia"
+	}
+]

@@ -1,0 +1,10 @@
+[
+	{
+		"modalidadeEnsinoUID" : 1,
+		"name" : "A distância"
+	},
+	{
+		"modalidadeEnsinoUID" : 2,
+		"name" : "Presencial"
+	}
+]

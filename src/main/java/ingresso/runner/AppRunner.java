@@ -25,22 +25,28 @@ import ingresso.model.City;
 import ingresso.model.CivilState;
 import ingresso.model.Deficiency;
 import ingresso.model.Gender;
+import ingresso.model.InstitutionType;
+import ingresso.model.Modality;
 import ingresso.model.Nationality;
 import ingresso.model.Pole;
 import ingresso.model.Race;
 import ingresso.model.Sex;
 import ingresso.model.State;
+import ingresso.model.SuperiorCourse;
 import ingresso.repository.BankAccountTypeRepository;
 import ingresso.repository.BankRepository;
 import ingresso.repository.CityRepository;
 import ingresso.repository.CivilStateRepository;
 import ingresso.repository.DeficiencyRepository;
 import ingresso.repository.GenderRepository;
+import ingresso.repository.InstitutionTypeRepository;
+import ingresso.repository.ModalityRepository;
 import ingresso.repository.NationalityRepository;
 import ingresso.repository.PoleRepository;
 import ingresso.repository.RaceRepository;
 import ingresso.repository.SexRepository;
 import ingresso.repository.StateRepository;
+import ingresso.repository.SuperiorCourseRepository;
 
 @Configuration
 public class AppRunner implements ApplicationRunner {
@@ -77,6 +83,15 @@ public class AppRunner implements ApplicationRunner {
 
 	@Autowired
 	private SexRepository sexRepository;
+
+	@Autowired
+	private SuperiorCourseRepository superiorCourseRepository;
+
+	@Autowired
+	private InstitutionTypeRepository institutionTypeRepository;
+
+	@Autowired
+	private ModalityRepository modalityRepository;
 
 	@Transactional
 	@Override
@@ -136,6 +151,18 @@ public class AppRunner implements ApplicationRunner {
 		file = new ClassPathResource("json/sex.json").getFile();
 		List<Sex> sexes = List.of(objectMapper.readValue(file, Sex[].class));
 		sexRepository.saveAll(sexes);
+
+		file = new ClassPathResource("json/superiorCourse.json").getFile();
+		List<SuperiorCourse> superiorCourses = List.of(objectMapper.readValue(file, SuperiorCourse[].class));
+		superiorCourseRepository.saveAll(superiorCourses);
+
+		file = new ClassPathResource("json/institutionType.json").getFile();
+		List<InstitutionType> institutionTypes = List.of(objectMapper.readValue(file, InstitutionType[].class));
+		institutionTypeRepository.saveAll(institutionTypes);
+
+		file = new ClassPathResource("json/modality.json").getFile();
+		List<Modality> modalities = List.of(objectMapper.readValue(file, Modality[].class));
+		modalityRepository.saveAll(modalities);
 	}
 
 }

@@ -1,0 +1,22 @@
+[
+	{
+		"tipoAdmInstituicaoUID" : 1,
+		"name" : "Federal"
+	},
+	{
+		"tipoAdmInstituicaoUID" : 2,
+		"name" : "Estadual"
+	},
+	{
+		"tipoAdmInstituicaoUID" : 3,
+		"name" : "Municipal"
+	},
+	{
+		"tipoAdmInstituicaoUID" : 4,
+		"name" : "Privada"
+	},
+	{
+		"tipoAdmInstituicaoUID" : 5,
+		"name" : "Outra"
+	}
+]

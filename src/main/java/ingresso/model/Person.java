@@ -43,7 +43,7 @@ public class Person {
 	private Nationality nationality;
 
 	@ManyToOne
-	private City cityNaturality;
+	private City naturality;
 
 	@ManyToOne
 	private Deficiency deficiency;
@@ -60,6 +60,16 @@ public class Person {
 
 	@OneToOne
 	private BankAccount bankAccount;
+
+	@OneToOne
+	private Graduation graduation;
+
+	@OneToOne
+	private Address address;
+
+	private String phoneOne;
+
+	private String phoneTwo;
 
 	@PrePersist
 	void prePersiste() {
@@ -159,12 +169,12 @@ public class Person {
 		this.nationality = nationality;
 	}
 
-	public City getCityNaturality() {
-		return cityNaturality;
+	public City geNaturality() {
+		return naturality;
 	}
 
-	public void setCityNaturality(City cityNaturality) {
-		this.cityNaturality = cityNaturality;
+	public void setNaturality(City naturality) {
+		this.naturality = naturality;
 	}
 
 	public Deficiency getDeficiency() {
@@ -213,6 +223,38 @@ public class Person {
 
 	public void setBankAccount(BankAccount bankAccount) {
 		this.bankAccount = bankAccount;
+	}
+
+	public Graduation getGraduation() {
+		return graduation;
+	}
+
+	public void setGraduation(Graduation graduation) {
+		this.graduation = graduation;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public String getPhoneOne() {
+		return phoneOne;
+	}
+
+	public void setPhoneOne(String phoneOne) {
+		this.phoneOne = phoneOne;
+	}
+
+	public String getPhoneTwo() {
+		return phoneTwo;
+	}
+
+	public void setPhoneTwo(String phoneTwo) {
+		this.phoneTwo = phoneTwo;
 	}
 
 }
