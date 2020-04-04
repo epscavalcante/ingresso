@@ -2,6 +2,7 @@ package ingresso.model;
 
 import java.time.LocalDate;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,8 +23,6 @@ public class Person {
 
 	private String cpf;
 
-	private String email;
-
 	private LocalDate birth;
 
 	private String mother;
@@ -31,7 +30,7 @@ public class Person {
 	@ManyToOne
 	private Sex sex;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.MERGE)
 	private GeneralRegistry generalRegistry;
 
 	private Integer children;
@@ -58,13 +57,13 @@ public class Person {
 
 	private String socialName;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.MERGE)
 	private BankAccount bankAccount;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.MERGE)
 	private Graduation graduation;
 
-	@OneToOne
+	@OneToOne(cascade = CascadeType.MERGE)
 	private Address address;
 
 	private String phoneOne;
@@ -103,14 +102,6 @@ public class Person {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
 	}
 
 	public LocalDate getBirth() {
@@ -169,7 +160,7 @@ public class Person {
 		this.nationality = nationality;
 	}
 
-	public City geNaturality() {
+	public City getNaturality() {
 		return naturality;
 	}
 

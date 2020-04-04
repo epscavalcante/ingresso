@@ -1,10 +1,14 @@
 package ingresso.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 @Entity
 public class Candidate {
@@ -19,8 +23,11 @@ public class Candidate {
 	@ManyToOne(optional = false)
 	private SelectiveProcess selectiveProcess;
 
-	@ManyToOne(optional = false)
+	@Enumerated(EnumType.STRING)
 	private CandidateStatus status;
+
+	@OneToOne(optional = true, cascade = CascadeType.MERGE)
+	private Job job;
 
 	public Integer getId() {
 		return id;
@@ -52,6 +59,14 @@ public class Candidate {
 
 	public void setStatus(CandidateStatus status) {
 		this.status = status;
+	}
+
+	public Job getJob() {
+		return job;
+	}
+
+	public void setJob(Job job) {
+		this.job = job;
 	}
 
 }
