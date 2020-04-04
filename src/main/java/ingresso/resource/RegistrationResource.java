@@ -30,13 +30,14 @@ public class RegistrationResource {
 	}
 
 	@GetMapping("/{id}")
-	public RegistrationDto findById(@PathVariable Integer id) {
-		return service.findById(id);
+	public RegistrationDto findById(@PathVariable("id") Integer candidateId) {
+		return service.findById(candidateId);
 	}
 
 	@PutMapping("/{id}")
 	@ResponseStatus(HttpStatus.OK)
-	public RegistrationDto create(@PathVariable("id") Integer candidateId, @Valid @RequestBody RegistrationDto resource) {
+	public RegistrationDto create(@PathVariable("id") Integer candidateId,
+			@Valid @RequestBody RegistrationDto resource) {
 		return service.save(candidateId, resource);
 	}
 }

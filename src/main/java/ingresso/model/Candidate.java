@@ -1,5 +1,7 @@
 package ingresso.model;
 
+import java.util.Objects;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -17,7 +19,7 @@ public class Candidate {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	@ManyToOne(optional = false)
+	@ManyToOne(optional = false, cascade = CascadeType.MERGE)
 	private Person person;
 
 	@ManyToOne(optional = false)
@@ -62,6 +64,8 @@ public class Candidate {
 	}
 
 	public Job getJob() {
+		if (Objects.isNull(job))
+			setJob(new Job());
 		return job;
 	}
 

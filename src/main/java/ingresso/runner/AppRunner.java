@@ -10,8 +10,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -48,7 +48,7 @@ import ingresso.repository.SexRepository;
 import ingresso.repository.StateRepository;
 import ingresso.repository.SuperiorCourseRepository;
 
-@Configuration
+@Component
 public class AppRunner implements ApplicationRunner {
 
 	@Autowired
