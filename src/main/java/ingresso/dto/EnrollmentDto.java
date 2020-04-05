@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-public class RegistrationDto {
+public class EnrollmentDto {
 
 	private Integer id;
 
@@ -53,7 +53,7 @@ public class RegistrationDto {
 
 	private JobDto job;
 
-	public RegistrationDto() {
+	public EnrollmentDto() {
 		this.job = new JobDto();
 	}
 

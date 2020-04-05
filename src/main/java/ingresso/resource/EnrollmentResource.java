@@ -1,7 +1,5 @@
 package ingresso.resource;
 
-import java.util.Collection;
-
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,30 +12,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import ingresso.dto.RegistrationDto;
-import ingresso.service.RegistrationService;
+import ingresso.dto.EnrollmentDto;
+import ingresso.service.EnrollmentService;
 
 @RestController
-@RequestMapping("/registrations")
-public class RegistrationResource {
+@RequestMapping("/enrollments")
+public class EnrollmentResource {
 
 	@Autowired
-	private RegistrationService service;
-
-	@GetMapping
-	public Collection<RegistrationDto> findAll() {
-		return service.findAll();
-	}
+	private EnrollmentService service;
 
 	@GetMapping("/{id}")
-	public RegistrationDto findById(@PathVariable("id") Integer candidateId) {
+	public EnrollmentDto findById(@PathVariable("id") Integer candidateId) {
 		return service.findById(candidateId);
 	}
 
 	@PutMapping("/{id}")
 	@ResponseStatus(HttpStatus.OK)
-	public RegistrationDto create(@PathVariable("id") Integer candidateId,
-			@Valid @RequestBody RegistrationDto resource) {
+	public EnrollmentDto create(@PathVariable("id") Integer candidateId, @Valid @RequestBody EnrollmentDto resource) {
 		return service.save(candidateId, resource);
 	}
 }
