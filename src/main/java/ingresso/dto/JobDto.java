@@ -6,6 +6,10 @@ public class JobDto {
 	private CityDto city;
 	private Long socialIdentificationNumber;
 
+	public JobDto() {
+		this.city = new CityDto();
+	}
+
 	public String getLocalName() {
 		return localName;
 	}

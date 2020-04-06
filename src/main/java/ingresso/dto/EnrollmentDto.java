@@ -5,8 +5,11 @@ import java.time.LocalDate;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class EnrollmentDto {
 
+	@JsonIgnore
 	private Integer id;
 
 	private String name;
@@ -54,6 +57,10 @@ public class EnrollmentDto {
 	private JobDto job;
 
 	public EnrollmentDto() {
+		this.generalRegistry = new GeneralRegistryDto();
+		this.bankAccount = new BankAccountDto();
+		this.graduation = new GraduationDto();
+		this.address = new AddressDto();
 		this.job = new JobDto();
 	}
 

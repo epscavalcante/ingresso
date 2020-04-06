@@ -9,6 +9,10 @@ public class GeneralRegistryDto {
 	private LocalDate consignedAt;
 	private StateDto state;
 
+	public GeneralRegistryDto() {
+		this.state = new StateDto();
+	}
+
 	public String getNumber() {
 		return number;
 	}

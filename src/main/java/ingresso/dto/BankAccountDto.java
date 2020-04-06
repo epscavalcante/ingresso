@@ -7,6 +7,11 @@ public class BankAccountDto {
 	private String agency;
 	private String number;
 
+	public BankAccountDto() {
+		this.bank = new BankDto();
+		this.type = new BankAccountTypeDto();
+	}
+
 	public BankDto getBank() {
 		return bank;
 	}

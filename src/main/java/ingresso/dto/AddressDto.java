@@ -9,6 +9,10 @@ public class AddressDto {
 	private String neighborhood;
 	private String complement;
 
+	public AddressDto() {
+		this.city = new CityDto();
+	}
+
 	public String getZipCode() {
 		return zipCode;
 	}

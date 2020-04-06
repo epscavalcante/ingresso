@@ -9,6 +9,13 @@ public class GraduationDto {
 	private InstitutionTypeDto institutionType;
 	private ModalityDto modality;
 
+	public GraduationDto() {
+		this.superiorCourse = new SuperiorCourseDto();
+		this.city = new CityDto();
+		this.institutionType = new InstitutionTypeDto();
+		this.modality = new ModalityDto();
+	}
+
 	public String getInstitutionName() {
 		return institutionName;
 	}
