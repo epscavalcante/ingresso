@@ -18,6 +18,9 @@ public class Document {
 	@ManyToOne(optional = false)
 	private Candidate candidate;
 
+	@ManyToOne(optional = false)
+	private DocumentType type;
+
 	@OneToOne(optional = false, cascade = CascadeType.PERSIST)
 	private DocumentFile file;
 
@@ -39,6 +42,14 @@ public class Document {
 
 	public void setCandidate(Candidate candidate) {
 		this.candidate = candidate;
+	}
+
+	public DocumentType getType() {
+		return type;
+	}
+
+	public void setType(DocumentType type) {
+		this.type = type;
 	}
 
 	public DocumentFile getFile() {
