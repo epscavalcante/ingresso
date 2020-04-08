@@ -16,9 +16,15 @@ insert into document_type (name, description) values ('FORMAÇÃO ACADÊMICA (n�
 insert into document_type (name, description) values ('EXPERIÊNCIA PROFISSIONAL (tempo de experiência comprovada)', 'Docência de Ensino Básico, na área de Ciência (no mínimo 1 ano)')
 insert into document_type (name, description) values ('EXPERIÊNCIA PROFISSIONAL (tempo de experiência comprovada)', 'Docência de Ensino Básico, na área de Biologia, Química ou Física. (no mínimo 1 ano)')
 
+insert into document_type (name, description) values ('FORMAÇÃO ACADÊMICA', 'Certificado ou Diploma de conclusão do Ensino Médio')
+insert into document_type (name, description) values ('FORMAÇÃO ACADÊMICA', 'Histórico Escolar de Ensino Médio devidamente registrado')
+
 insert into selective_process_document_type (selective_process_id, document_type_id, points, mandatory) values (2, 1, 5.0, false)
 insert into selective_process_document_type (selective_process_id, document_type_id, points, mandatory) values (2, 2, 3.0, false)
 insert into selective_process_document_type (selective_process_id, document_type_id, points, mandatory) values (2, 3, 2.0, false)
+
+insert into selective_process_document_type (selective_process_id, document_type_id, points, mandatory) values (1, 4, 0, true)
+insert into selective_process_document_type (selective_process_id, document_type_id, points, mandatory) values (1, 5, 0, true)
 
 insert into person (name, cpf, birth) values ('Atreus', '49407314057', '1994-03-31')
 

@@ -1,5 +1,7 @@
 package ingresso.model;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +17,7 @@ public class Document {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
-	@ManyToOne(optional = false)
+	@ManyToOne
 	private Candidate candidate;
 
 	@ManyToOne(optional = false)
@@ -24,8 +26,16 @@ public class Document {
 	@OneToOne(optional = false, cascade = CascadeType.PERSIST)
 	private DocumentFile file;
 
+	private Boolean homologated;
+
+	private LocalDateTime homologatedAt;
+
+	private Double points;
+
 	public Document() {
 		this.candidate = new Candidate();
+		this.type = new DocumentType();
+		this.file = new DocumentFile();
 	}
 
 	public Integer getId() {
@@ -58,6 +68,30 @@ public class Document {
 
 	public void setFile(DocumentFile file) {
 		this.file = file;
+	}
+
+	public Boolean getHomologated() {
+		return homologated;
+	}
+
+	public void setHomologated(Boolean homologated) {
+		this.homologated = homologated;
+	}
+
+	public LocalDateTime getHomologatedAt() {
+		return homologatedAt;
+	}
+
+	public void setHomologatedAt(LocalDateTime homologatedAt) {
+		this.homologatedAt = homologatedAt;
+	}
+
+	public Double getPoints() {
+		return points;
+	}
+
+	public void setPoints(Double points) {
+		this.points = points;
 	}
 
 }

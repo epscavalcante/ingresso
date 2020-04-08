@@ -16,6 +16,13 @@ public class DocumentType {
 
 	private String description;
 
+	public DocumentType() {
+	}
+
+	public DocumentType(Integer id) {
+		this.id = id;
+	}
+
 	public Integer getId() {
 		return id;
 	}

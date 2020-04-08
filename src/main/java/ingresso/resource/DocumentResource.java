@@ -1,7 +1,5 @@
 package ingresso.resource;
 
-import java.util.Collection;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
@@ -16,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import ingresso.dto.DocumentDto;
 import ingresso.dto.UploadDto;
 import ingresso.model.DocumentFile;
 import ingresso.service.DocumentService;
@@ -27,11 +24,6 @@ public class DocumentResource {
 
 	@Autowired
 	private DocumentService service;
-
-	@GetMapping
-	public Collection<DocumentDto> findAll() {
-		return service.findAll();
-	}
 
 	@PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
