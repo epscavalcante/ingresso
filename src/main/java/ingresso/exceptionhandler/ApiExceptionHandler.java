@@ -9,6 +9,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -74,4 +75,12 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 		Problem body = new Problem(ex.getMessage(), status.value(), OffsetDateTime.now(), null);
 		return handleExceptionInternal(ex, body, new HttpHeaders(), status, request);
 	}
+
+	@ExceptionHandler(BadCredentialsException.class)
+	public ResponseEntity<?> handleBadCredentialsException(BadCredentialsException ex, WebRequest request) {
+		HttpStatus status = HttpStatus.UNAUTHORIZED;
+		Problem body = new Problem("email e/ou senha inválidos.", status.value(), OffsetDateTime.now(), null);
+		return handleExceptionInternal(ex, body, new HttpHeaders(), status, request);
+	}
+
 }

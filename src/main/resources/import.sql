@@ -29,3 +29,10 @@ insert into selective_process_document_type (selective_process_id, document_type
 insert into person (name, cpf, email, birth) values ('Atreus', '49407314057', 'atreus@gmail.com', '1994-03-31')
 
 insert into candidate (person_id, selective_process_id, status) values (1, 2, 'REGISTERED')
+
+insert into role (name) values ('ROLE_ADMIN')
+insert into role (name) values ('ROLE_CANDIDATE')
+
+insert into user (email, password, name) values ('robson.costa@gmail.com', '$2a$10$LgfcTF8/7K4IXVOjkpGbBOehTUn93OD4OTjjNApeXdv1yshZJvLj2', 'Robson Oliveira da Costa')
+
+insert into user_role (user_id, role_id) values (1, 1)

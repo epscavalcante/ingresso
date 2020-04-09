@@ -1,4 +1,4 @@
-package ingresso.dto.signup;
+package ingresso.dto.user;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

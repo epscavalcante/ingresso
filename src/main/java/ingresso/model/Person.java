@@ -3,6 +3,7 @@ package ingresso.model;
 import java.time.LocalDate;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,6 +22,7 @@ public class Person {
 
 	private String name;
 
+	@Column(unique = true)
 	private String cpf;
 
 	private String email;

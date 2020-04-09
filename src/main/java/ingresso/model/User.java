@@ -2,7 +2,9 @@ package ingresso.model;
 
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -108,4 +110,9 @@ public class User implements UserDetails {
 	public boolean isEnabled() {
 		return true;
 	}
+
+	public List<String> getRolesList() {
+		return roles.stream().map(Role::getName).collect(Collectors.toList());
+	}
+
 }

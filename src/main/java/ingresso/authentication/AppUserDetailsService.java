@@ -1,4 +1,4 @@
-package ingresso.service;
+package ingresso.authentication;
 
 import java.util.Optional;
 
@@ -20,9 +20,7 @@ public class AppUserDetailsService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 		Optional<User> optionalUser = userRepository.findByEmail(email);
-		if (optionalUser.isEmpty())
-			throw new UsernameNotFoundException("Usuario " + email + " não encontrado!");
-		return optionalUser.get();
+		return optionalUser.orElseThrow(() -> new UsernameNotFoundException("Usuário não encontrado: " + email));
 	}
 
 }

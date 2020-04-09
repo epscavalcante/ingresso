@@ -12,4 +12,6 @@ public interface PersonRepository extends JpaRepository<Person, Integer> {
 
 	Optional<Person> findByCpfAndEmail(String cpf, String email);
 
+	Optional<Person> findByCpf(String cpf);
+
 }
