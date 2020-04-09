@@ -1,6 +1,8 @@
 package ingresso.service;
 
+import java.time.LocalDateTime;
 import java.util.Collection;
+import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -8,6 +10,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import ingresso.exception.AppException;
 import ingresso.exception.ResourceNotFoundException;
 import ingresso.model.Step;
 import ingresso.repository.StepRepository;
@@ -42,4 +45,14 @@ public class StepService {
 	public void delete(Integer id) {
 		repository.delete(findById(id));
 	}
+
+	public void checkPeriodEnrollment(Integer selectiveProcessId) {
+		LocalDateTime now = LocalDateTime.now();
+		Optional<Step> optionalStep = repository.findBySelectiveProcessId(selectiveProcessId).stream()
+				.filter(s -> s.getBegin().isBefore(now)).findFirst();
+		if (optionalStep.isEmpty()) {
+			throw new AppException("Nenhuma ETAPA aberta para este Processo Seletivo!");
+		}
+	}
+
 }

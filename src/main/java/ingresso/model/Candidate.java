@@ -3,6 +3,7 @@ package ingresso.model;
 import java.util.Objects;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -26,6 +27,7 @@ public class Candidate {
 	private SelectiveProcess selectiveProcess;
 
 	@Enumerated(EnumType.STRING)
+	@Column(nullable = false)
 	private CandidateStatus status;
 
 	@OneToOne(optional = true, cascade = CascadeType.MERGE)
@@ -71,6 +73,10 @@ public class Candidate {
 
 	public void setJob(Job job) {
 		this.job = job;
+	}
+
+	public boolean forbiddenEnrollment() {
+		return !this.getStatus().equals(CandidateStatus.REGISTERED);
 	}
 
 }

@@ -5,12 +5,11 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import ingresso.model.Candidate;
 import ingresso.model.Person;
 
 @Repository
-public interface CandidateRepository extends JpaRepository<Candidate, Integer> {
+public interface PersonRepository extends JpaRepository<Person, Integer> {
 
-	Optional<Candidate> findByPersonAndSelectiveProcessId(Person person, Integer selectiveProcessId);
+	Optional<Person> findByCpfAndEmail(String cpf, String email);
 
 }

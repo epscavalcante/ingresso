@@ -19,6 +19,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.fasterxml.jackson.databind.exc.PropertyBindingException;
 
+import ingresso.exception.AppException;
 import ingresso.exception.ResourceNotFoundException;
 
 @ControllerAdvice
@@ -62,6 +63,14 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 	private ResponseEntity<?> handleResourceNotFoundException(ResourceNotFoundException ex, WebRequest request) {
 
 		HttpStatus status = HttpStatus.NOT_FOUND;
+		Problem body = new Problem(ex.getMessage(), status.value(), OffsetDateTime.now(), null);
+		return handleExceptionInternal(ex, body, new HttpHeaders(), status, request);
+	}
+
+	@ExceptionHandler(AppException.class)
+	private ResponseEntity<?> handleAppException(AppException ex, WebRequest request) {
+
+		HttpStatus status = HttpStatus.BAD_REQUEST;
 		Problem body = new Problem(ex.getMessage(), status.value(), OffsetDateTime.now(), null);
 		return handleExceptionInternal(ex, body, new HttpHeaders(), status, request);
 	}

@@ -4,7 +4,7 @@ insert into selective_process_type (name) values ('Pós-Graduação')
 insert into selective_process (name, type_id) values ('Tecnologia Educacional', 1)
 insert into selective_process (name, type_id) values ('Ciência 10', 2)
 
-insert into step (name, begin, end, selective_process_id) values ('Pré-Matrícula', '2020-03-20T08:00', '2020-03-23T23:59', 2)
+insert into step (name, begin, end, selective_process_id) values ('Pré-Matrícula', '2020-03-20T08:00', '2020-04-30T23:59', 2)
 
 insert into course (name) values ('Especialização em Ensino de Ciências – Anos Finais do Ensino Fundamental “Ciência é Dez!”')
 
@@ -26,6 +26,6 @@ insert into selective_process_document_type (selective_process_id, document_type
 insert into selective_process_document_type (selective_process_id, document_type_id, points, mandatory) values (1, 4, 0, true)
 insert into selective_process_document_type (selective_process_id, document_type_id, points, mandatory) values (1, 5, 0, true)
 
-insert into person (name, cpf, birth) values ('Atreus', '49407314057', '1994-03-31')
+insert into person (name, cpf, email, birth) values ('Atreus', '49407314057', 'atreus@gmail.com', '1994-03-31')
 
 insert into candidate (person_id, selective_process_id, status) values (1, 2, 'REGISTERED')

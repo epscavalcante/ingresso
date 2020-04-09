@@ -23,6 +23,8 @@ public class Person {
 
 	private String cpf;
 
+	private String email;
+
 	private LocalDate birth;
 
 	private String mother;
@@ -102,6 +104,14 @@ public class Person {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public LocalDate getBirth() {
