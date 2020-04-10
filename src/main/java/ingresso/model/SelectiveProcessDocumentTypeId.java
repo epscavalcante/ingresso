@@ -40,4 +40,35 @@ public class SelectiveProcessDocumentTypeId implements Serializable {
 		this.documentTypeId = documentTypeId;
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((documentTypeId == null) ? 0 : documentTypeId.hashCode());
+		result = prime * result + ((selectiveProcessId == null) ? 0 : selectiveProcessId.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		SelectiveProcessDocumentTypeId other = (SelectiveProcessDocumentTypeId) obj;
+		if (documentTypeId == null) {
+			if (other.documentTypeId != null)
+				return false;
+		} else if (!documentTypeId.equals(other.documentTypeId))
+			return false;
+		if (selectiveProcessId == null) {
+			if (other.selectiveProcessId != null)
+				return false;
+		} else if (!selectiveProcessId.equals(other.selectiveProcessId))
+			return false;
+		return true;
+	}
+
 }

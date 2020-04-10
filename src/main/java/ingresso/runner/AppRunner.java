@@ -2,8 +2,6 @@ package ingresso.runner;
 
 import java.io.File;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import javax.transaction.Transactional;
 
@@ -12,13 +10,10 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import ingresso.dto.EstadoDto;
-import ingresso.dto.MunicipioDto;
 import ingresso.model.Bank;
 import ingresso.model.BankAccountType;
 import ingresso.model.City;
@@ -97,26 +92,18 @@ public class AppRunner implements ApplicationRunner {
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
 
-		RestTemplate restTemplate = new RestTemplate();
-		String url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados";
-		EstadoDto[] estados = restTemplate.getForObject(url, EstadoDto[].class);
-		List<State> states = Stream.of(estados).map(e -> new State(e.getId(), e.getNome(), e.getSigla()))
-				.collect(Collectors.toList());
-		stateRepository.saveAll(states);
-
-		for (State state : states) {
-			url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados/".concat(state.getId().toString())
-					.concat("/municipios");
-			MunicipioDto[] municipios = restTemplate.getForObject(url, MunicipioDto[].class);
-			List<City> cities = Stream.of(municipios).map(m -> new City(m.getId(), m.getNome(), state))
-					.collect(Collectors.toList());
-			cityRepository.saveAll(cities);
-		}
-
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
-		File file = new ClassPathResource("json/bank.json").getFile();
+		File file = new ClassPathResource("json/state.json").getFile();
+		List<State> states = List.of(objectMapper.readValue(file, State[].class));
+		stateRepository.saveAll(states);
+
+		file = new ClassPathResource("json/city.json").getFile();
+		List<City> cities = List.of(objectMapper.readValue(file, City[].class));
+		cityRepository.saveAll(cities);
+
+		file = new ClassPathResource("json/bank.json").getFile();
 		List<Bank> banks = List.of(objectMapper.readValue(file, Bank[].class));
 		bankRepository.saveAll(banks);
 
