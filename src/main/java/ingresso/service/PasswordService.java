@@ -1,14 +1,17 @@
 package ingresso.service;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
 
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import ingresso.dto.password.PasswordRecoveryDto;
+import ingresso.dto.password.PasswordResetDto;
 import ingresso.event.PasswordRecoveryEventPublisher;
 import ingresso.exception.AppException;
 import ingresso.model.PasswordResetToken;
@@ -29,6 +32,9 @@ public class PasswordService {
 	@Autowired
 	private PasswordRecoveryEventPublisher eventPublisher;
 
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+
 	@Transactional
 	public void passwordRecovery(PasswordRecoveryDto passwordRecoveryDto) {
 		Optional<User> optionalUser = userRepository.findByEmail(passwordRecoveryDto.getEmail());
@@ -40,9 +46,28 @@ public class PasswordService {
 				optionalUser.get());
 		passwordResetTokenRepository.save(passwordResetToken);
 
-		String url = ResourceUriHelper.gerarUrlRecuperarSenha(passwordResetToken.getToken());
+		String url = ResourceUriHelper.passwordResetUrl(passwordResetToken.getToken());
 		passwordResetToken.setUrl(url);
 		eventPublisher.publishEvent(passwordResetToken);
+	}
+
+	@Transactional
+	public void passwordReset(PasswordResetDto passwordResetDto) {
+		if (passwordResetDto.passwordsNotEqual()) {
+			throw new AppException("Senhas devem ser iguais!");
+		}
+		Optional<PasswordResetToken> optional = passwordResetTokenRepository.findByToken(passwordResetDto.getToken());
+		if (optional.isEmpty()) {
+			throw new AppException(
+					"Token INVÁLIDO! Volte a tela de login e acesse o link => Esqueceu sua senha? clique aqui!");
+		}
+		if (optional.get().getExpiresIn().isBefore(LocalDateTime.now())) {
+			throw new AppException(
+					"Token EXPIRADO! Volte a tela de login e acesse o link => Esqueceu sua senha? clique aqui!");
+		}
+		User user = optional.get().getUser();
+		user.setPassword(passwordEncoder.encode(passwordResetDto.getPassword()));
+		userRepository.save(user);
 	}
 
 }

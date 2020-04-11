@@ -4,7 +4,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 public class ResourceUriHelper {
 
-	public static String gerarUrlRecuperarSenha(String token) {
+	public static String passwordResetUrl(String token) {
 		return ServletUriComponentsBuilder
 				.fromCurrentContextPath().path("/password-reset/{token}")
 				.buildAndExpand(token).toString();
