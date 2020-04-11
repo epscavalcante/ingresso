@@ -46,4 +46,8 @@ public class Role implements GrantedAuthority {
 		return name;
 	}
 
+	public String shortName() {
+		return name.replace("ROLE_", "");
+	}
+
 }

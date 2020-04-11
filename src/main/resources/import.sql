@@ -34,5 +34,7 @@ insert into role (name) values ('ROLE_ADMIN')
 insert into role (name) values ('ROLE_CANDIDATE')
 
 insert into user (email, password, name) values ('robson.costa@gmail.com', '$2a$10$LgfcTF8/7K4IXVOjkpGbBOehTUn93OD4OTjjNApeXdv1yshZJvLj2', 'Robson Oliveira da Costa')
+insert into user (email, password, name) values ('kratos@gmail.com', '$2a$10$LgfcTF8/7K4IXVOjkpGbBOehTUn93OD4OTjjNApeXdv1yshZJvLj2', 'Kratos')
 
 insert into user_role (user_id, role_id) values (1, 1)
+insert into user_role (user_id, role_id) values (2, 2)

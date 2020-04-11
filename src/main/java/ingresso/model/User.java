@@ -112,7 +112,7 @@ public class User implements UserDetails {
 	}
 
 	public List<String> getRolesList() {
-		return roles.stream().map(Role::getName).collect(Collectors.toList());
+		return roles.stream().map(Role::shortName).collect(Collectors.toList());
 	}
 
 }
