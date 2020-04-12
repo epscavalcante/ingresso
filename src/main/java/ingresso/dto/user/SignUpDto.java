@@ -2,6 +2,7 @@ package ingresso.dto.user;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.br.CPF;
 
@@ -23,6 +24,9 @@ public class SignUpDto {
 	@CPF
 	@NotBlank
 	private String cpf;
+
+	@NotNull
+	private Integer selectiveProcessId;
 
 	public String getEmail() {
 		return email;
@@ -62,6 +66,14 @@ public class SignUpDto {
 
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+
+	public Integer getSelectiveProcessId() {
+		return selectiveProcessId;
+	}
+
+	public void setSelectiveProcessId(Integer selectiveProcessId) {
+		this.selectiveProcessId = selectiveProcessId;
 	}
 
 }

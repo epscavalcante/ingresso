@@ -14,6 +14,7 @@ import ingresso.authentication.JwtTokenManager;
 import ingresso.dto.authentication.AuthenticationDto;
 import ingresso.dto.authentication.UserInfoDto;
 import ingresso.model.User;
+import ingresso.service.CandidateService;
 
 @RestController
 @RequestMapping("/auth")
@@ -25,6 +26,9 @@ public class AuthenticationResource {
 	@Autowired
 	private JwtTokenManager jwtTokenManager;
 
+	@Autowired
+	private CandidateService candidateService;
+
 	@PostMapping
 	public ResponseEntity<AuthenticationDto> authenticate(@RequestBody UserInfoDto login) {
 		UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(
@@ -32,7 +36,8 @@ public class AuthenticationResource {
 		Authentication authentication = authenticationManager.authenticate(authenticationToken);
 		User user = (User) authentication.getPrincipal();
 		String jwt = jwtTokenManager.generateToken(user);
-		AuthenticationDto tokenResponse = new AuthenticationDto(user, jwt);
+		Integer candidateId = candidateService.findCandidateId(login.getSelectiveProcessId());
+		AuthenticationDto tokenResponse = new AuthenticationDto(candidateId, user, jwt);
 		return ResponseEntity.ok(tokenResponse);
 	}
 

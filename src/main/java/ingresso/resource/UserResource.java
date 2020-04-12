@@ -18,6 +18,7 @@ import ingresso.dto.authentication.UserInfoDto;
 import ingresso.dto.user.CandidateCheckDto;
 import ingresso.dto.user.SignUpDto;
 import ingresso.model.User;
+import ingresso.service.CandidateService;
 import ingresso.service.UserService;
 
 @RestController
@@ -33,6 +34,9 @@ public class UserResource {
 	@Autowired
 	private JwtTokenManager jwtTokenManager;
 
+	@Autowired
+	private CandidateService candidateService;
+
 	@PostMapping("/check")
 	public SignUpDto check(@Valid @RequestBody CandidateCheckDto candidateCheckDto) {
 		return service.check(candidateCheckDto);
@@ -47,7 +51,8 @@ public class UserResource {
 		Authentication authentication = authenticationManager.authenticate(authenticationToken);
 		User user = (User) authentication.getPrincipal();
 		String jwt = jwtTokenManager.generateToken(user);
-		AuthenticationDto tokenResponse = new AuthenticationDto(user, jwt);
+		Integer candidateId = candidateService.findCandidateId(signUpDto.getSelectiveProcessId());
+		AuthenticationDto tokenResponse = new AuthenticationDto(candidateId, user, jwt);
 		return ResponseEntity.ok(tokenResponse);
 	}
 

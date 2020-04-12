@@ -4,13 +4,15 @@ public class UserInfoDto {
 
 	private String username;
 	private String password;
+	private Integer selectiveProcessId;
 
 	public UserInfoDto() {
 	}
 
-	public UserInfoDto(String username, String password) {
+	public UserInfoDto(String username, String password, Integer selectiveProcessId) {
 		this.username = username;
 		this.password = password;
+		this.selectiveProcessId = selectiveProcessId;
 	}
 
 	public String getUsername() {
@@ -27,6 +29,14 @@ public class UserInfoDto {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public Integer getSelectiveProcessId() {
+		return selectiveProcessId;
+	}
+
+	public void setSelectiveProcessId(Integer selectiveProcessId) {
+		this.selectiveProcessId = selectiveProcessId;
 	}
 
 }

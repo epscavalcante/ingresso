@@ -13,4 +13,6 @@ public interface CandidateRepository extends JpaRepository<Candidate, Integer> {
 
 	Optional<Candidate> findByPersonAndSelectiveProcessId(Person person, Integer selectiveProcessId);
 
+	Optional<Candidate> findBySelectiveProcessId(Integer selectiveProcessId);
+
 }

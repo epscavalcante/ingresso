@@ -10,12 +10,17 @@ import org.springframework.stereotype.Service;
 
 import ingresso.dto.CandidateDocumentDto;
 import ingresso.dto.DocumentTypeDto;
+import ingresso.model.Candidate;
 import ingresso.model.Document;
+import ingresso.repository.CandidateRepository;
 import ingresso.repository.DocumentRepository;
 import ingresso.repository.SelectiveProcessDocumentTypeRepository;
 
 @Service
 public class CandidateService {
+
+	@Autowired
+	private CandidateRepository repository;
 
 	@Autowired
 	private ModelMapper modelMapper;
@@ -26,15 +31,19 @@ public class CandidateService {
 	@Autowired
 	private DocumentRepository documentRepository;
 
+	public Integer findCandidateId(Integer selectiveProcessId) {
+		return repository.findBySelectiveProcessId(selectiveProcessId).orElse(new Candidate()).getId();
+	}
+
 	public Collection<CandidateDocumentDto> findDocuments(Integer candidateId) {
-		Integer selectiveProcessId = 2; // TODO hardcode
+		Candidate candidate = repository.findById(candidateId).get();
 
 		List<CandidateDocumentDto> result = selectiveProcessDocumentTypeRepository
-				.findBySelectiveProcessId(selectiveProcessId).stream()
+				.findBySelectiveProcess(candidate.getSelectiveProcess()).stream()
 				.map(spdt -> new CandidateDocumentDto(modelMapper.map(spdt.getDocumentType(), DocumentTypeDto.class)))
 				.collect(Collectors.toList());
 
-		List<Document> documents = documentRepository.findByCandidateId(candidateId);
+		List<Document> documents = documentRepository.findByCandidate(candidate);
 		for (CandidateDocumentDto candidateDocumentDto : result) {
 			List<String> filenames = documents.stream()
 					.filter(d -> d.getType().getId().equals(candidateDocumentDto.getDocumentType().getId()))

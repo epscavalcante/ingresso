@@ -86,6 +86,6 @@ public class UserService {
 
 		userRepository.save(user);
 
-		return new UserInfoDto(signUpDto.getEmail(), signUpDto.getPassword());
+		return new UserInfoDto(signUpDto.getEmail(), signUpDto.getPassword(), signUpDto.getSelectiveProcessId());
 	}
 }
