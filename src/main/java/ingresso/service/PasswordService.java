@@ -58,12 +58,10 @@ public class PasswordService {
 		}
 		Optional<PasswordResetToken> optional = passwordResetTokenRepository.findByToken(passwordResetDto.getToken());
 		if (optional.isEmpty()) {
-			throw new AppException(
-					"Token INVÁLIDO! Volte a tela de login e acesse o link => Esqueceu sua senha? clique aqui!");
+			throw new AppException("Token INVÁLIDO! Volte na tela de login e clique no link => Esqueceu a senha?");
 		}
 		if (optional.get().getExpiresIn().isBefore(LocalDateTime.now())) {
-			throw new AppException(
-					"Token EXPIRADO! Volte a tela de login e acesse o link => Esqueceu sua senha? clique aqui!");
+			throw new AppException("Token EXPIRADO! Volte na tela de login e clique no link => Esqueceu a senha?");
 		}
 		User user = optional.get().getUser();
 		user.setPassword(passwordEncoder.encode(passwordResetDto.getPassword()));

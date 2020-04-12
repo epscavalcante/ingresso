@@ -2,7 +2,7 @@ package ingresso.service;
 
 import java.time.LocalDateTime;
 import java.util.Collection;
-import java.util.Optional;
+import java.util.List;
 
 import javax.transaction.Transactional;
 
@@ -48,9 +48,9 @@ public class StepService {
 
 	public void checkPeriodEnrollment(Integer selectiveProcessId) {
 		LocalDateTime now = LocalDateTime.now();
-		Optional<Step> optionalStep = repository.findBySelectiveProcessId(selectiveProcessId).stream()
-				.filter(s -> s.getBegin().isBefore(now)).findFirst();
-		if (optionalStep.isEmpty()) {
+		List<Step> steps = repository.findByBeginBeforeAndEndAfter(now, now);
+		long count = steps.stream().filter(s -> s.getSelectiveProcess().getId().equals(selectiveProcessId)).count();
+		if (count == 0) {
 			throw new AppException("Nenhuma ETAPA aberta para este Processo Seletivo!");
 		}
 	}

@@ -4,6 +4,7 @@ insert into selective_process_type (name) values ('Pós-Graduação')
 insert into selective_process (name, type_id) values ('Tecnologia Educacional', 1)
 insert into selective_process (name, type_id) values ('Ciência 10', 2)
 
+insert into step (name, begin, end, selective_process_id) values ('1 Pré-Matrícula', '2020-01-01T08:00', '2020-01-20T23:59', 1)
 insert into step (name, begin, end, selective_process_id) values ('Pré-Matrícula', '2020-03-20T08:00', '2020-04-30T23:59', 2)
 
 insert into course (name) values ('Especialização em Ensino de Ciências – Anos Finais do Ensino Fundamental “Ciência é Dez!”')

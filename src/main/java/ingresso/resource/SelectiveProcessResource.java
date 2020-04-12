@@ -54,4 +54,9 @@ public class SelectiveProcessResource {
 		service.delete(id);
 	}
 
+	@GetMapping("/open")
+	public Collection<SelectiveProcess> findOpen() {
+		return service.findOpen();
+	}
+
 }
