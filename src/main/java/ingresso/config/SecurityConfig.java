@@ -36,6 +36,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.authorizeRequests()
 			.antMatchers("/auth", "/users/check", "/users").permitAll()
 			.antMatchers("/password-recovery", "/password-reset/*", "/password-reset").permitAll()
+			.antMatchers("/selective-processes/open").permitAll()
 			.anyRequest().authenticated()
 			.and().csrf().disable()
 			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
