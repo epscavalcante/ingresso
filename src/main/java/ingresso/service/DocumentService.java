@@ -48,6 +48,12 @@ public class DocumentService {
 		return documentFileRepository.findByFilename(filename).get();
 	}
 
+	@Transactional
+	public void remove(String filename) {
+		Document document = repository.findByFileFilename(filename).get();
+		repository.delete(document);
+	}
+
 	private String getExtension(String filename) {
 		Optional<String> optional = Optional.ofNullable(filename).filter(f -> f.contains("."))
 				.map(f -> f.substring(filename.lastIndexOf(".") + 1));
