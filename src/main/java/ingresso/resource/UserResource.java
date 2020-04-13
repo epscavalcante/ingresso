@@ -7,14 +7,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ingresso.authentication.JwtTokenManager;
+import ingresso.dto.MessageDto;
 import ingresso.dto.authentication.AuthenticationDto;
 import ingresso.dto.authentication.UserInfoDto;
+import ingresso.dto.password.PasswordChangeDto;
 import ingresso.dto.user.CandidateCheckDto;
 import ingresso.dto.user.SignUpDto;
 import ingresso.model.User;
@@ -54,6 +58,13 @@ public class UserResource {
 		Integer candidateId = candidateService.findCandidateId(signUpDto.getSelectiveProcessId());
 		AuthenticationDto tokenResponse = new AuthenticationDto(candidateId, user, jwt);
 		return ResponseEntity.ok(tokenResponse);
+	}
+
+	@PutMapping("/{id}/password")
+	public ResponseEntity<MessageDto> passwordChange(@PathVariable Integer id,
+			@Valid @RequestBody PasswordChangeDto passwordChangeDto) {
+		service.changePassword(id, passwordChangeDto);
+		return ResponseEntity.ok(new MessageDto("Senha atualizada."));
 	}
 
 }

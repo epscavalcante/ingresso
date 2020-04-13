@@ -76,4 +76,12 @@ public class SignUpDto {
 		this.selectiveProcessId = selectiveProcessId;
 	}
 
+	public boolean emailsNotEqual() {
+		return !email.equals(confirmEmail);
+	}
+
+	public boolean passwordsNotEqual() {
+		return !password.equals(confirmPassword);
+	}
+
 }

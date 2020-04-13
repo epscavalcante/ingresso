@@ -9,6 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import ingresso.dto.authentication.UserInfoDto;
+import ingresso.dto.password.PasswordChangeDto;
 import ingresso.dto.user.CandidateCheckDto;
 import ingresso.dto.user.SignUpDto;
 import ingresso.exception.AppException;
@@ -34,7 +35,7 @@ public class UserService {
 	private CandidateRepository candidateRepository;
 
 	@Autowired
-	private UserRepository userRepository;
+	private UserRepository repository;
 
 	@Autowired
 	private RoleRepository roleRepository;
@@ -65,13 +66,13 @@ public class UserService {
 
 	@Transactional
 	public UserInfoDto create(SignUpDto signUpDto) {
-		if (!signUpDto.getEmail().equals(signUpDto.getConfirmEmail())) {
+		if (signUpDto.emailsNotEqual()) {
 			throw new AppException("E-mails devem ser iguais!");
 		}
-		if (!signUpDto.getPassword().equals(signUpDto.getConfirmPassword())) {
+		if (signUpDto.passwordsNotEqual()) {
 			throw new AppException("Senhas devem ser iguais!");
 		}
-		if (userRepository.findByEmail(signUpDto.getEmail()).isPresent()) {
+		if (repository.findByEmail(signUpDto.getEmail()).isPresent()) {
 			throw new AppException("E-mail já cadastrado para outro candidato!");
 		}
 
@@ -84,8 +85,19 @@ public class UserService {
 		user.setPassword(passwordEncoder.encode(signUpDto.getPassword()));
 		user.setName(person.getName());
 
-		userRepository.save(user);
+		repository.save(user);
 
 		return new UserInfoDto(signUpDto.getEmail(), signUpDto.getPassword(), signUpDto.getSelectiveProcessId());
 	}
+
+	@Transactional
+	public void changePassword(Integer id, PasswordChangeDto passwordChangeDto) {
+		if (passwordChangeDto.passwordsNotEqual()) {
+			throw new AppException("Senhas devem ser iguais!");
+		}
+		User user = repository.getOne(id);
+		user.setPassword(passwordEncoder.encode(passwordChangeDto.getPassword()));
+		repository.save(user);
+	}
+
 }

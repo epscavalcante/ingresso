@@ -6,20 +6,22 @@ import ingresso.model.User;
 
 public class AuthenticationDto {
 
+	private Integer userId;
 	private Integer candidateId;
 	private String name;
 	private List<String> roles;
 	private String token;
 
 	public AuthenticationDto(Integer candidateId, User user, String token) {
-		this(candidateId, user.getName(), user.getRolesList(), token);
+		this.userId = user.getId();
+		this.candidateId = candidateId;
+		this.name = user.getName();
+		this.roles = user.getRolesList();
+		this.token = token;
 	}
 
-	public AuthenticationDto(Integer candidateId, String name, List<String> roles, String token) {
-		this.candidateId = candidateId;
-		this.name = name;
-		this.roles = roles;
-		this.token = token;
+	public Integer getUserId() {
+		return userId;
 	}
 
 	public Integer getCandidateId() {
